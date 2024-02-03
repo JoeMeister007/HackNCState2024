@@ -2,7 +2,7 @@ import Toybox.Application;
 import Toybox.Lang;
 import Toybox.WatchUi;
 
-class HackNCState2024App extends Application.AppBase {
+class SuperCropApp extends Application.AppBase {
 
     function initialize() {
         AppBase.initialize();
@@ -18,11 +18,11 @@ class HackNCState2024App extends Application.AppBase {
 
     // Return the initial view of your application here
     function getInitialView() as Array<Views or InputDelegates>? {
-        return [ new HackNCState2024View(), new HackNCState2024Delegate() ] as Array<Views or InputDelegates>;
+        return [ new InitialView(), new BehaviorDelegate() ] as Array<Views or InputDelegates>;
     }
 
 }
 
-function getApp() as HackNCState2024App {
-    return Application.getApp() as HackNCState2024App;
+function getApp() as SuperCropApp {
+    return Application.getApp() as SuperCropApp;
 }

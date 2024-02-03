@@ -1,0 +1,100 @@
+[ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\source\InitialView.mc"; @line = 1; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\source\InitialView.mc"; @line = 12; ]
+class InitialView extends WatchUi.View{
+    [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\source\InitialView.mc"; @line = 12; ]
+    <init> {
+    }
+    [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\source\InitialView.mc"; @line = 12; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\source\InitialView.mc"; @line = 13; @position = 8; ]
+    var firstLoad = true;
+    [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\source\InitialView.mc"; @line = 14; @position = 8; ]
+    var mainMenu;
+    [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\source\InitialView.mc"; @line = 15; ]
+    function initialize() as Void {
+C_Users_Joey_Documents_GitHub_HackNCState2024_source_InitialView_mc_15_26_start:
+[ "C:\Users\Joey\Documents\GitHub\HackNCState2024\source\InitialView.mc" 16 8 ]
+        %tmp.1 = getm $.Toybox.WatchUi;
+        %tmp.2 = getv %tmp.1 :View;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "C:\Users\Joey\Documents\GitHub\HackNCState2024\source\InitialView.mc" 17 8 ]
+        %tmp.6 = getm $.Toybox.WatchUi;
+        %tmp.7 = getv function ? %tmp.6 :Menu;
+        %tmp.4 = newc %tmp.7 ();
+        putv self :mainMenu %tmp.4;
+[ "C:\Users\Joey\Documents\GitHub\HackNCState2024\source\InitialView.mc" 18 8 ]
+        %tmp.9 = getv ? :mainMenu;
+        %tmp.10 = getv function %tmp.9 :setTitle;
+        %tmp.11 = "Menu";
+        invoke %tmp.9 %tmp.10(%tmp.11);
+[ "C:\Users\Joey\Documents\GitHub\HackNCState2024\source\InitialView.mc" 19 8 ]
+        %tmp.13 = getv ? :mainMenu;
+        %tmp.14 = getv function %tmp.13 :addItem;
+        %tmp.15 = "Current Seed";
+        %tmp.17 = const :seed;
+        invoke %tmp.13 %tmp.14(%tmp.15, %tmp.17);
+[ "C:\Users\Joey\Documents\GitHub\HackNCState2024\source\InitialView.mc" 20 8 ]
+        %tmp.19 = getv ? :mainMenu;
+        %tmp.20 = getv function %tmp.19 :addItem;
+        %tmp.21 = "Encyclopedia";
+        %tmp.23 = const :encyclopedia;
+        invoke %tmp.19 %tmp.20(%tmp.21, %tmp.23);
+[ "C:\Users\Joey\Documents\GitHub\HackNCState2024\source\InitialView.mc" 21 8 ]
+        %tmp.25 = getv ? :mainMenu;
+        %tmp.26 = getv function %tmp.25 :addItem;
+        %tmp.27 = "Shop";
+        %tmp.29 = const :shop;
+        invoke %tmp.25 %tmp.26(%tmp.27, %tmp.29);
+[ "C:\Users\Joey\Documents\GitHub\HackNCState2024\source\InitialView.mc" 22 8 ]
+        %tmp.31 = getv ? :mainMenu;
+        %tmp.32 = getv function %tmp.31 :addItem;
+        %tmp.33 = "Stats";
+        %tmp.35 = const :stats;
+        invoke %tmp.31 %tmp.32(%tmp.33, %tmp.35);
+C_Users_Joey_Documents_GitHub_HackNCState2024_source_InitialView_mc_15_26_stop:
+    }
+    [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\source\InitialView.mc"; @line = 25; ]
+    function onShow() {
+C_Users_Joey_Documents_GitHub_HackNCState2024_source_InitialView_mc_25_22_start:
+[ "C:\Users\Joey\Documents\GitHub\HackNCState2024\source\InitialView.mc" 26 8 ]
+C_Users_Joey_Documents_GitHub_HackNCState2024_source_InitialView_mc_26_8_if_stmt:
+        %tmp.2 = getv ? :firstLoad;
+        %tmp.3 = true;
+        %tmp.4 = eq %tmp.2 %tmp.3;
+        bf %tmp.4 @C_Users_Joey_Documents_GitHub_HackNCState2024_source_InitialView_mc_26_8_if_false;
+C_Users_Joey_Documents_GitHub_HackNCState2024_source_InitialView_mc_26_8_if_true:
+C_Users_Joey_Documents_GitHub_HackNCState2024_source_InitialView_mc_26_31_start:
+[ "C:\Users\Joey\Documents\GitHub\HackNCState2024\source\InitialView.mc" 27 12 ]
+        %tmp.5 = false;
+        putv self :firstLoad %tmp.5;
+[ "C:\Users\Joey\Documents\GitHub\HackNCState2024\source\InitialView.mc" 28 12 ]
+        %tmp.6 = getm $.Toybox.WatchUi;
+        %tmp.7 = getv function %tmp.6 :pushView;
+        %tmp.9 = getv ? :mainMenu;
+        %tmp.13 = getv ? :MainMenuDelegate;
+        %tmp.10 = newc %tmp.13 ();
+        %tmp.14 = getm $.Toybox.WatchUi;
+        %tmp.15 = getv %tmp.14 :SLIDE_IMMEDIATE;
+        invoke %tmp.6 %tmp.7(%tmp.9, %tmp.10, %tmp.15);
+C_Users_Joey_Documents_GitHub_HackNCState2024_source_InitialView_mc_26_31_stop:
+        goto @C_Users_Joey_Documents_GitHub_HackNCState2024_source_InitialView_mc_26_8_if_end;
+C_Users_Joey_Documents_GitHub_HackNCState2024_source_InitialView_mc_26_8_if_false:
+C_Users_Joey_Documents_GitHub_HackNCState2024_source_InitialView_mc_30_13_start:
+[ "C:\Users\Joey\Documents\GitHub\HackNCState2024\source\InitialView.mc" 31 12 ]
+        %tmp.16 = getm $.Toybox.WatchUi;
+        %tmp.17 = getv function %tmp.16 :popView;
+        %tmp.18 = getm $.Toybox.WatchUi;
+        %tmp.19 = getv %tmp.18 :SLIDE_IMMEDIATE;
+        invoke %tmp.16 %tmp.17(%tmp.19);
+C_Users_Joey_Documents_GitHub_HackNCState2024_source_InitialView_mc_30_13_stop:
+C_Users_Joey_Documents_GitHub_HackNCState2024_source_InitialView_mc_26_8_if_end:
+C_Users_Joey_Documents_GitHub_HackNCState2024_source_InitialView_mc_25_22_stop:
+    }
+}
+[ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\source\InitialView.mc"; @line = 1; ]
+<init> {
+}

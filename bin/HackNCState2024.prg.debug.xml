@@ -2,89 +2,147 @@
 <debugInfo>
     <manifest filename="C:\Users\Joey\Documents\GitHub\HackNCState2024\manifest.xml"/>
     <pcToLineNum>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\HackNCState2024MenuDelegate.mc" id="1" lineNum="5" parent="globals/HackNCState2024MenuDelegate" pc="268435460" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\HackNCState2024MenuDelegate.mc" id="2" lineNum="11" parent="globals/HackNCState2024MenuDelegate" pc="268435479" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\HackNCState2024MenuDelegate.mc" id="2" lineNum="12" parent="globals/HackNCState2024MenuDelegate" pc="268435481" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\HackNCState2024MenuDelegate.mc" id="2" lineNum="13" parent="globals/HackNCState2024MenuDelegate" pc="268435492" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\HackNCState2024MenuDelegate.mc" id="2" lineNum="14" parent="globals/HackNCState2024MenuDelegate" pc="268435516" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\HackNCState2024MenuDelegate.mc" id="2" lineNum="15" parent="globals/HackNCState2024MenuDelegate" pc="268435527" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\HackNCState2024MenuDelegate.mc" id="3" lineNum="7" parent="globals/HackNCState2024MenuDelegate" pc="268435552" symbol="initialize"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\HackNCState2024MenuDelegate.mc" id="3" lineNum="8" parent="globals/HackNCState2024MenuDelegate" pc="268435554" symbol="initialize"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\HackNCState2024App.mc" id="4" lineNum="26" parent="globals" pc="268435573" symbol="getApp"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\HackNCState2024App.mc" id="4" lineNum="27" parent="globals" pc="268435583" symbol="getApp"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\HackNCState2024Delegate.mc" id="5" lineNum="4" parent="globals/HackNCState2024Delegate" pc="268435599" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\HackNCState2024Delegate.mc" id="6" lineNum="10" parent="globals/HackNCState2024Delegate" pc="268435618" symbol="onMenu"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\HackNCState2024Delegate.mc" id="6" lineNum="11" parent="globals/HackNCState2024Delegate" pc="268435620" symbol="onMenu"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\HackNCState2024Delegate.mc" id="6" lineNum="12" parent="globals/HackNCState2024Delegate" pc="268435705" symbol="onMenu"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\HackNCState2024Delegate.mc" id="7" lineNum="6" parent="globals/HackNCState2024Delegate" pc="268435708" symbol="initialize"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\HackNCState2024Delegate.mc" id="7" lineNum="7" parent="globals/HackNCState2024Delegate" pc="268435710" symbol="initialize"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\HackNCState2024App.mc" id="8" lineNum="5" parent="globals/HackNCState2024App" pc="268435729" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\HackNCState2024App.mc" id="9" lineNum="12" parent="globals/HackNCState2024App" pc="268435748" symbol="onStart"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\HackNCState2024App.mc" id="10" lineNum="20" parent="globals/HackNCState2024App" pc="268435751" symbol="getInitialView"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\HackNCState2024App.mc" id="10" lineNum="21" parent="globals/HackNCState2024App" pc="268435753" symbol="getInitialView"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\HackNCState2024App.mc" id="11" lineNum="7" parent="globals/HackNCState2024App" pc="268435828" symbol="initialize"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\HackNCState2024App.mc" id="11" lineNum="8" parent="globals/HackNCState2024App" pc="268435830" symbol="initialize"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\HackNCState2024App.mc" id="12" lineNum="16" parent="globals/HackNCState2024App" pc="268435849" symbol="onStop"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\bin\\gen\\006-B3600-00\\source\\Rez.mcgen" id="13" lineNum="7" parent="globals/Rez" pc="268435852" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\HackNCState2024View.mc" id="14" lineNum="4" parent="globals/HackNCState2024View" pc="268435876" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\HackNCState2024View.mc" id="16" lineNum="11" parent="globals/HackNCState2024View" pc="268435895" symbol="onLayout"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\HackNCState2024View.mc" id="16" lineNum="12" parent="globals/HackNCState2024View" pc="268435897" symbol="onLayout"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\HackNCState2024View.mc" id="17" lineNum="6" parent="globals/HackNCState2024View" pc="268435939" symbol="initialize"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\HackNCState2024View.mc" id="17" lineNum="7" parent="globals/HackNCState2024View" pc="268435941" symbol="initialize"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\HackNCState2024View.mc" id="19" lineNum="22" parent="globals/HackNCState2024View" pc="268435960" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\HackNCState2024View.mc" id="19" lineNum="24" parent="globals/HackNCState2024View" pc="268435962" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\bin\\gen\\006-B3600-00\\source\\Rez.mcgen" id="20" lineNum="20" parent="globals/Rez/Layouts" pc="268435983" symbol="MainLayout"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\bin\\gen\\006-B3600-00\\source\\Rez.mcgen" id="20" lineNum="21" parent="globals/Rez/Layouts" pc="268435995" symbol="MainLayout"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\bin\\gen\\006-B3600-00\\source\\Rez.mcgen" id="20" lineNum="23" parent="globals/Rez/Layouts" pc="268436126" symbol="MainLayout"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\bin\\gen\\006-B3600-00\\source\\Rez.mcgen" id="20" lineNum="24" parent="globals/Rez/Layouts" pc="268436231" symbol="MainLayout"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\bin\\gen\\006-B3600-00\\source\\Rez.mcgen" id="20" lineNum="26" parent="globals/Rez/Layouts" pc="268436271" symbol="MainLayout"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\bin\\gen\\006-B3600-00\\source\\Rez.mcgen" id="21" lineNum="31" parent="globals/Rez/Menus/MainMenu" pc="268436298" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\bin\\gen\\006-B3600-00\\source\\Rez.mcgen" id="22" lineNum="32" parent="globals/Rez/Menus/MainMenu" pc="268436317" symbol="initialize"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\bin\\gen\\006-B3600-00\\source\\Rez.mcgen" id="22" lineNum="33" parent="globals/Rez/Menus/MainMenu" pc="268436319" symbol="initialize"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\bin\\gen\\006-B3600-00\\source\\Rez.mcgen" id="22" lineNum="34" parent="globals/Rez/Menus/MainMenu" pc="268436337" symbol="initialize"/>
-        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\bin\\gen\\006-B3600-00\\source\\Rez.mcgen" id="22" lineNum="35" parent="globals/Rez/Menus/MainMenu" pc="268436393" symbol="initialize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\Stats\\StatsView.mc" id="1" lineNum="4" parent="globals/StatsView" pc="268435460" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\Stats\\StatsView.mc" id="2" lineNum="5" parent="globals/StatsView" pc="268435479" symbol="initialize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\Stats\\StatsView.mc" id="2" lineNum="6" parent="globals/StatsView" pc="268435481" symbol="initialize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\Stats\\StatsView.mc" id="3" lineNum="9" parent="globals/StatsView" pc="268435504" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\Stats\\StatsView.mc" id="3" lineNum="11" parent="globals/StatsView" pc="268435506" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\Stats\\StatsView.mc" id="3" lineNum="12" parent="globals/StatsView" pc="268435528" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\Stats\\StatsView.mc" id="3" lineNum="14" parent="globals/StatsView" pc="268435540" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\Encyclopedia\\EncyclopediaView.mc" id="4" lineNum="4" parent="globals/EncyclopediaView" pc="268435602" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\Encyclopedia\\EncyclopediaView.mc" id="5" lineNum="5" parent="globals/EncyclopediaView" pc="268435621" symbol="initialize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\Encyclopedia\\EncyclopediaView.mc" id="5" lineNum="6" parent="globals/EncyclopediaView" pc="268435623" symbol="initialize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\Encyclopedia\\EncyclopediaView.mc" id="6" lineNum="9" parent="globals/EncyclopediaView" pc="268435646" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\Encyclopedia\\EncyclopediaView.mc" id="6" lineNum="11" parent="globals/EncyclopediaView" pc="268435648" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\Encyclopedia\\EncyclopediaView.mc" id="6" lineNum="12" parent="globals/EncyclopediaView" pc="268435670" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\Encyclopedia\\EncyclopediaView.mc" id="6" lineNum="14" parent="globals/EncyclopediaView" pc="268435682" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\SuperCropApp.mc" id="7" lineNum="26" parent="globals" pc="268435744" symbol="getApp"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\SuperCropApp.mc" id="7" lineNum="27" parent="globals" pc="268435754" symbol="getApp"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\bin\\gen\\006-B2886-00\\source\\Rez.mcgen" id="8" lineNum="7" parent="globals/Rez" pc="268435770" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\InitialView.mc" id="9" lineNum="12" parent="globals/InitialView" pc="268435794" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\InitialView.mc" id="10" lineNum="25" parent="globals/InitialView" pc="268435813" symbol="onShow"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\InitialView.mc" id="10" lineNum="26" parent="globals/InitialView" pc="268435815" symbol="onShow"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\InitialView.mc" id="10" lineNum="27" parent="globals/InitialView" pc="268435829" symbol="onShow"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\InitialView.mc" id="10" lineNum="28" parent="globals/InitialView" pc="268435839" symbol="onShow"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\InitialView.mc" id="10" lineNum="31" parent="globals/InitialView" pc="268435897" symbol="onShow"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\InitialView.mc" id="11" lineNum="15" parent="globals/InitialView" pc="268435919" symbol="initialize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\InitialView.mc" id="11" lineNum="16" parent="globals/InitialView" pc="268435921" symbol="initialize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\InitialView.mc" id="11" lineNum="17" parent="globals/InitialView" pc="268435943" symbol="initialize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\InitialView.mc" id="11" lineNum="18" parent="globals/InitialView" pc="268435977" symbol="initialize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\InitialView.mc" id="11" lineNum="19" parent="globals/InitialView" pc="268436000" symbol="initialize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\InitialView.mc" id="11" lineNum="20" parent="globals/InitialView" pc="268436028" symbol="initialize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\InitialView.mc" id="11" lineNum="21" parent="globals/InitialView" pc="268436056" symbol="initialize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\InitialView.mc" id="11" lineNum="22" parent="globals/InitialView" pc="268436084" symbol="initialize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\Page2.mc" id="12" lineNum="4" parent="globals/Page2" pc="268436113" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\Page2.mc" id="14" lineNum="12" parent="globals/Page2" pc="268436132" symbol="onLayout"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\Page2.mc" id="15" lineNum="6" parent="globals/Page2" pc="268436135" symbol="initialize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\Page2.mc" id="15" lineNum="7" parent="globals/Page2" pc="268436137" symbol="initialize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\Page2.mc" id="15" lineNum="8" parent="globals/Page2" pc="268436155" symbol="initialize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\Page2.mc" id="17" lineNum="22" parent="globals/Page2" pc="268436205" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\Page2.mc" id="17" lineNum="23" parent="globals/Page2" pc="268436207" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\Page2.mc" id="17" lineNum="24" parent="globals/Page2" pc="268436229" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\Page2.mc" id="17" lineNum="25" parent="globals/Page2" pc="268436241" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\SuperCropApp.mc" id="18" lineNum="5" parent="globals/SuperCropApp" pc="268436272" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\SuperCropApp.mc" id="19" lineNum="12" parent="globals/SuperCropApp" pc="268436291" symbol="onStart"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\SuperCropApp.mc" id="20" lineNum="20" parent="globals/SuperCropApp" pc="268436294" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\SuperCropApp.mc" id="20" lineNum="21" parent="globals/SuperCropApp" pc="268436296" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\SuperCropApp.mc" id="21" lineNum="7" parent="globals/SuperCropApp" pc="268436371" symbol="initialize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\SuperCropApp.mc" id="21" lineNum="8" parent="globals/SuperCropApp" pc="268436373" symbol="initialize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\SuperCropApp.mc" id="22" lineNum="16" parent="globals/SuperCropApp" pc="268436392" symbol="onStop"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\MainMenuDelegate.mc" id="23" lineNum="5" parent="globals/MainMenuDelegate" pc="268436395" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\MainMenuDelegate.mc" id="24" lineNum="11" parent="globals/MainMenuDelegate" pc="268436414" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\MainMenuDelegate.mc" id="24" lineNum="12" parent="globals/MainMenuDelegate" pc="268436416" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\MainMenuDelegate.mc" id="24" lineNum="13" parent="globals/MainMenuDelegate" pc="268436418" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\MainMenuDelegate.mc" id="24" lineNum="16" parent="globals/MainMenuDelegate" pc="268436438" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\MainMenuDelegate.mc" id="24" lineNum="19" parent="globals/MainMenuDelegate" pc="268436458" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\MainMenuDelegate.mc" id="24" lineNum="22" parent="globals/MainMenuDelegate" pc="268436478" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\MainMenuDelegate.mc" id="24" lineNum="25" parent="globals/MainMenuDelegate" pc="268436498" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\MainMenuDelegate.mc" id="24" lineNum="14" parent="globals/MainMenuDelegate" pc="268436501" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\MainMenuDelegate.mc" id="24" lineNum="15" parent="globals/MainMenuDelegate" pc="268436574" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\MainMenuDelegate.mc" id="24" lineNum="17" parent="globals/MainMenuDelegate" pc="268436577" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\MainMenuDelegate.mc" id="24" lineNum="18" parent="globals/MainMenuDelegate" pc="268436650" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\MainMenuDelegate.mc" id="24" lineNum="20" parent="globals/MainMenuDelegate" pc="268436653" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\MainMenuDelegate.mc" id="24" lineNum="21" parent="globals/MainMenuDelegate" pc="268436726" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\MainMenuDelegate.mc" id="24" lineNum="23" parent="globals/MainMenuDelegate" pc="268436729" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\MainMenuDelegate.mc" id="24" lineNum="24" parent="globals/MainMenuDelegate" pc="268436802" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\MainMenuDelegate.mc" id="24" lineNum="26" parent="globals/MainMenuDelegate" pc="268436805" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\MainMenuDelegate.mc" id="24" lineNum="27" parent="globals/MainMenuDelegate" pc="268436878" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\MainMenuDelegate.mc" id="25" lineNum="7" parent="globals/MainMenuDelegate" pc="268436883" symbol="initialize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\MainMenuDelegate.mc" id="25" lineNum="8" parent="globals/MainMenuDelegate" pc="268436885" symbol="initialize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\Seed\\SeedView.mc" id="26" lineNum="4" parent="globals/SeedView" pc="268436904" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\Seed\\SeedView.mc" id="27" lineNum="5" parent="globals/SeedView" pc="268436923" symbol="initialize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\Seed\\SeedView.mc" id="27" lineNum="6" parent="globals/SeedView" pc="268436925" symbol="initialize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\Seed\\SeedView.mc" id="28" lineNum="9" parent="globals/SeedView" pc="268436948" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\Seed\\SeedView.mc" id="28" lineNum="11" parent="globals/SeedView" pc="268436950" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\Seed\\SeedView.mc" id="28" lineNum="12" parent="globals/SeedView" pc="268436972" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\Seed\\SeedView.mc" id="28" lineNum="14" parent="globals/SeedView" pc="268436984" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\Shop\\ShopView.mc" id="29" lineNum="4" parent="globals/ShopView" pc="268437046" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\Shop\\ShopView.mc" id="30" lineNum="5" parent="globals/ShopView" pc="268437065" symbol="initialize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\Shop\\ShopView.mc" id="30" lineNum="6" parent="globals/ShopView" pc="268437067" symbol="initialize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\Shop\\ShopView.mc" id="31" lineNum="9" parent="globals/ShopView" pc="268437090" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\Shop\\ShopView.mc" id="31" lineNum="11" parent="globals/ShopView" pc="268437092" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\Shop\\ShopView.mc" id="31" lineNum="12" parent="globals/ShopView" pc="268437114" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\source\\Shop\\ShopView.mc" id="31" lineNum="14" parent="globals/ShopView" pc="268437126" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\bin\\gen\\006-B2886-00\\source\\Rez.mcgen" id="32" lineNum="21" parent="globals/Rez/Layouts" pc="268437188" symbol="MainLayout"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\bin\\gen\\006-B2886-00\\source\\Rez.mcgen" id="32" lineNum="22" parent="globals/Rez/Layouts" pc="268437200" symbol="MainLayout"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\bin\\gen\\006-B2886-00\\source\\Rez.mcgen" id="32" lineNum="24" parent="globals/Rez/Layouts" pc="268437331" symbol="MainLayout"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\bin\\gen\\006-B2886-00\\source\\Rez.mcgen" id="32" lineNum="25" parent="globals/Rez/Layouts" pc="268437436" symbol="MainLayout"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\bin\\gen\\006-B2886-00\\source\\Rez.mcgen" id="32" lineNum="27" parent="globals/Rez/Layouts" pc="268437476" symbol="MainLayout"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\bin\\gen\\006-B2886-00\\source\\Rez.mcgen" id="33" lineNum="32" parent="globals/Rez/Menus/MainMenu" pc="268437503" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\bin\\gen\\006-B2886-00\\source\\Rez.mcgen" id="34" lineNum="33" parent="globals/Rez/Menus/MainMenu" pc="268437522" symbol="initialize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\bin\\gen\\006-B2886-00\\source\\Rez.mcgen" id="34" lineNum="34" parent="globals/Rez/Menus/MainMenu" pc="268437524" symbol="initialize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\bin\\gen\\006-B2886-00\\source\\Rez.mcgen" id="34" lineNum="35" parent="globals/Rez/Menus/MainMenu" pc="268437542" symbol="initialize"/>
+        <entry filename="C:\\Users\\Joey\\Documents\\GitHub\\HackNCState2024\\bin\\gen\\006-B2886-00\\source\\Rez.mcgen" id="34" lineNum="36" parent="globals/Rez/Menus/MainMenu" pc="268437598" symbol="initialize"/>
     </pcToLineNum>
     <symbolTable>
         <entry id="8388639" module="true" symbol="Graphics"/>
         <entry id="8389346" symbol="text"/>
-        <entry id="9" object="true" symbol="HackNCState2024App"/>
         <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
         <entry id="7" module="true" symbol="globals/Rez/Menus"/>
-        <entry id="17" method="true" symbol="MainLayout"/>
+        <entry id="16" object="true" symbol="SuperCropApp"/>
+        <entry id="25" method="true" symbol="MainLayout"/>
+        <entry id="15" object="true" symbol="StatsView"/>
+        <entry id="11" object="true" symbol="MainMenuDelegate"/>
+        <entry id="9" object="true" symbol="EncyclopediaView"/>
         <entry field="true" id="8388611" module="true" symbol="Toybox"/>
-        <entry field="true" id="19" symbol="AppName"/>
-        <entry id="10" object="true" symbol="HackNCState2024Delegate"/>
+        <entry field="true" id="27" symbol="AppName"/>
         <entry id="8" module="true" symbol="globals/Rez/Strings"/>
-        <entry id="8389080" method="true" symbol="onMenu"/>
         <entry id="8388772" module="true" object="true" symbol="Fonts"/>
         <entry id="8389345" symbol="rezId"/>
         <entry id="8388648" module="true" symbol="WatchUi"/>
-        <entry id="11" object="true" symbol="HackNCState2024MenuDelegate"/>
         <entry id="2" module="true" symbol="globals/Rez"/>
-        <entry field="true" id="22" symbol="prompt"/>
-        <entry field="true" id="16" symbol="id_monkey"/>
+        <entry field="true" id="30" symbol="prompt"/>
+        <entry field="true" id="24" symbol="id_monkey"/>
         <entry id="8389124" method="true" symbol="onUpdate"/>
         <entry field="true" id="8389065" symbol="locY"/>
         <entry field="true" id="8389064" symbol="locX"/>
         <entry id="8388771" module="true" object="true" symbol="Drawables"/>
         <entry id="8389348" symbol="font"/>
-        <entry id="24" symbol="item_2"/>
-        <entry id="23" symbol="item_1"/>
-        <entry id="14" module="true" symbol="Menus"/>
+        <entry id="36" symbol="item_2"/>
+        <entry id="35" symbol="item_1"/>
+        <entry id="18" module="true" symbol="Menus"/>
         <entry id="8389275" method="true" symbol="getApp"/>
+        <entry id="14" object="true" symbol="ShopView"/>
         <entry id="6" module="true" symbol="globals/Rez/Layouts"/>
         <entry id="8389122" method="true" symbol="onLayout"/>
-        <entry id="12" object="true" symbol="HackNCState2024View"/>
+        <entry id="33" symbol="shop"/>
         <entry field="true" id="8389063" symbol="identifier"/>
+        <entry field="true" id="21" symbol="kermitBitMap"/>
         <entry id="8389349" symbol="justification"/>
+        <entry field="true" id="22" symbol="KermitImage"/>
         <entry id="5" module="true" symbol="globals/Rez/JsonData"/>
+        <entry id="10" object="true" symbol="InitialView"/>
         <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
-        <entry id="18" object="true" symbol="MainMenu"/>
+        <entry field="true" id="20" symbol="mainMenu"/>
+        <entry id="26" object="true" symbol="MainMenu"/>
+        <entry id="32" symbol="encyclopedia"/>
         <entry id="8388644" module="true" symbol="System"/>
         <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry field="true" id="19" symbol="firstLoad"/>
         <entry id="8388640" module="true" symbol="Lang"/>
+        <entry id="13" object="true" symbol="SeedView"/>
         <entry id="8390088" module="true" object="true" symbol="JsonData"/>
-        <entry field="true" id="15" symbol="LauncherIcon"/>
+        <entry field="true" id="23" symbol="LauncherIcon"/>
         <entry id="8388610" symbol="statics"/>
         <entry id="8389123" method="true" symbol="onShow"/>
         <entry id="8389350" module="true" symbol="globals"/>
@@ -95,20 +153,26 @@
         <entry id="8389281" method="true" symbol="onStop"/>
         <entry id="8389109" method="true" symbol="onMenuItem"/>
         <entry id="8389347" symbol="color"/>
-        <entry id="13" module="true" symbol="Layouts"/>
+        <entry id="17" module="true" symbol="Layouts"/>
+        <entry id="34" symbol="stats"/>
         <entry id="4" module="true" symbol="globals/Rez/Fonts"/>
         <entry id="8389125" method="true" symbol="onHide"/>
+        <entry id="31" symbol="seed"/>
         <entry id="8388635" module="true" symbol="Application"/>
-        <entry field="true" id="21" symbol="menu_label_2"/>
-        <entry field="true" id="20" symbol="menu_label_1"/>
+        <entry id="12" object="true" symbol="Page2"/>
+        <entry field="true" id="29" symbol="menu_label_2"/>
+        <entry field="true" id="28" symbol="menu_label_1"/>
     </symbolTable>
     <localVars>
-        <entry arg="true" endPc="268435551" name="item" stackId="1" startPc="268435479"/>
-        <entry arg="true" endPc="268435938" name="dc" stackId="1" startPc="268435895"/>
-        <entry arg="true" endPc="268435982" name="dc" stackId="1" startPc="268435960"/>
-        <entry arg="true" endPc="268436297" name="dc" stackId="1" startPc="268435983"/>
-        <entry endPc="268436297" name="rez_cmp_local_text_4205352541" stackId="2" startPc="268435995"/>
-        <entry endPc="268436297" name="rez_cmp_local_bitmap_id_monkey" stackId="3" startPc="268435995"/>
+        <entry arg="true" endPc="268435601" name="dc" stackId="1" startPc="268435504"/>
+        <entry arg="true" endPc="268435743" name="dc" stackId="1" startPc="268435646"/>
+        <entry arg="true" endPc="268436271" name="dc" stackId="1" startPc="268436205"/>
+        <entry arg="true" endPc="268436882" name="item" stackId="1" startPc="268436414"/>
+        <entry arg="true" endPc="268437045" name="dc" stackId="1" startPc="268436948"/>
+        <entry arg="true" endPc="268437187" name="dc" stackId="1" startPc="268437090"/>
+        <entry arg="true" endPc="268437502" name="dc" stackId="1" startPc="268437188"/>
+        <entry endPc="268437502" name="rez_cmp_local_text_1831312093" stackId="2" startPc="268437200"/>
+        <entry endPc="268437502" name="rez_cmp_local_bitmap_id_monkey" stackId="3" startPc="268437200"/>
     </localVars>
     <annotations>
         <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
@@ -116,83 +180,128 @@
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="menu_label_1"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="prompt"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="KermitImage"/>
         <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="id_monkey"/>
     </annotations>
     <dataEntryOffsetMappings>
         <dataEntry label="globals" offset="87" parentId="" symbolId="globals" type="module"/>
-        <dataEntry label="globals/HackNCState2024MenuDelegate" offset="174" parentId="globals" symbolId="HackNCState2024MenuDelegate" type="class"/>
-        <dataEntry label="globals/HackNCState2024Delegate" offset="229" parentId="globals" symbolId="HackNCState2024Delegate" type="class"/>
-        <dataEntry label="globals/HackNCState2024App" offset="284" parentId="globals" symbolId="HackNCState2024App" type="class"/>
-        <dataEntry label="globals/Rez" offset="355" parentId="globals" symbolId="Rez" type="module"/>
-        <dataEntry label="globals/HackNCState2024View" offset="434" parentId="globals" symbolId="HackNCState2024View" type="class"/>
-        <dataEntry label="globals/Rez/Drawables" offset="513" parentId="Rez" symbolId="Drawables" type="module"/>
-        <dataEntry label="globals/Rez/Layouts" offset="560" parentId="Rez" symbolId="Layouts" type="module"/>
-        <dataEntry label="globals/Rez/Menus" offset="599" parentId="Rez" symbolId="Menus" type="module"/>
-        <dataEntry label="globals/Rez/Fonts" offset="638" parentId="Rez" symbolId="Fonts" type="module"/>
-        <dataEntry label="globals/Rez/Strings" offset="669" parentId="Rez" symbolId="Strings" type="module"/>
-        <dataEntry label="globals/Rez/JsonData" offset="732" parentId="Rez" symbolId="JsonData" type="module"/>
-        <dataEntry label="globals/Rez/Menus/MainMenu" offset="763" parentId="Menus" symbolId="MainMenu" type="class"/>
+        <dataEntry label="globals/StatsView" offset="206" parentId="globals" symbolId="StatsView" type="class"/>
+        <dataEntry label="globals/EncyclopediaView" offset="261" parentId="globals" symbolId="EncyclopediaView" type="class"/>
+        <dataEntry label="globals/Rez" offset="316" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/InitialView" offset="395" parentId="globals" symbolId="InitialView" type="class"/>
+        <dataEntry label="globals/Page2" offset="466" parentId="globals" symbolId="Page2" type="class"/>
+        <dataEntry label="globals/SuperCropApp" offset="553" parentId="globals" symbolId="SuperCropApp" type="class"/>
+        <dataEntry label="globals/MainMenuDelegate" offset="624" parentId="globals" symbolId="MainMenuDelegate" type="class"/>
+        <dataEntry label="globals/SeedView" offset="679" parentId="globals" symbolId="SeedView" type="class"/>
+        <dataEntry label="globals/ShopView" offset="734" parentId="globals" symbolId="ShopView" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="789" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="844" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Menus" offset="883" parentId="Rez" symbolId="Menus" type="module"/>
+        <dataEntry label="globals/Rez/Fonts" offset="922" parentId="Rez" symbolId="Fonts" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="953" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/Rez/JsonData" offset="1016" parentId="Rez" symbolId="JsonData" type="module"/>
+        <dataEntry label="globals/Rez/Menus/MainMenu" offset="1047" parentId="Menus" symbolId="MainMenu" type="class"/>
     </dataEntryOffsetMappings>
     <functions>
-        <functionEntry accessMode="public" endPc="268435478" name="&lt;init&gt;" parent="HackNCState2024MenuDelegate" startPc="268435460">
+        <functionEntry accessMode="public" endPc="268435478" name="&lt;init&gt;" parent="StatsView" startPc="268435460">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435551" name="onMenuItem" parent="HackNCState2024MenuDelegate" startPc="268435479">
-            <param id="item"/>
+        <functionEntry accessMode="public" endPc="268435503" name="initialize" parent="StatsView" startPc="268435479">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435572" name="initialize" parent="HackNCState2024MenuDelegate" startPc="268435552">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268435598" name="getApp" startPc="268435573">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268435617" name="&lt;init&gt;" parent="HackNCState2024Delegate" startPc="268435599">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268435707" name="onMenu" parent="HackNCState2024Delegate" startPc="268435618">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268435728" name="initialize" parent="HackNCState2024Delegate" startPc="268435708">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268435747" name="&lt;init&gt;" parent="HackNCState2024App" startPc="268435729">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268435750" name="onStart" parent="HackNCState2024App" startPc="268435748">
-            <param id="state"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268435827" name="getInitialView" parent="HackNCState2024App" startPc="268435751">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268435848" name="initialize" parent="HackNCState2024App" startPc="268435828">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268435851" name="onStop" parent="HackNCState2024App" startPc="268435849">
-            <param id="state"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268435875" name="&lt;init&gt;" parent="Rez" startPc="268435852">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268435894" name="&lt;init&gt;" parent="HackNCState2024View" startPc="268435876">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" name="onShow" parent="HackNCState2024View">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268435938" name="onLayout" parent="HackNCState2024View" startPc="268435895">
+        <functionEntry accessMode="public" endPc="268435601" name="onUpdate" parent="StatsView" startPc="268435504">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435959" name="initialize" parent="HackNCState2024View" startPc="268435939">
+        <functionEntry accessMode="public" endPc="268435620" name="&lt;init&gt;" parent="EncyclopediaView" startPc="268435602">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" name="onHide" parent="HackNCState2024View">
+        <functionEntry accessMode="public" endPc="268435645" name="initialize" parent="EncyclopediaView" startPc="268435621">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435982" name="onUpdate" parent="HackNCState2024View" startPc="268435960">
+        <functionEntry accessMode="public" endPc="268435743" name="onUpdate" parent="EncyclopediaView" startPc="268435646">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435769" name="getApp" startPc="268435744">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435793" name="&lt;init&gt;" parent="Rez" startPc="268435770">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435812" name="&lt;init&gt;" parent="InitialView" startPc="268435794">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435918" name="onShow" parent="InitialView" startPc="268435813">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436112" name="initialize" parent="InitialView" startPc="268435919">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436131" name="&lt;init&gt;" parent="Page2" startPc="268436113">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onShow" parent="Page2">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436134" name="onLayout" parent="Page2" startPc="268436132">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436204" name="initialize" parent="Page2" startPc="268436135">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onHide" parent="Page2">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436271" name="onUpdate" parent="Page2" startPc="268436205">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436290" name="&lt;init&gt;" parent="SuperCropApp" startPc="268436272">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436293" name="onStart" parent="SuperCropApp" startPc="268436291">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436370" name="getInitialView" parent="SuperCropApp" startPc="268436294">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436391" name="initialize" parent="SuperCropApp" startPc="268436371">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436394" name="onStop" parent="SuperCropApp" startPc="268436392">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436413" name="&lt;init&gt;" parent="MainMenuDelegate" startPc="268436395">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436882" name="onMenuItem" parent="MainMenuDelegate" startPc="268436414">
+            <param id="item"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436903" name="initialize" parent="MainMenuDelegate" startPc="268436883">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436922" name="&lt;init&gt;" parent="SeedView" startPc="268436904">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436947" name="initialize" parent="SeedView" startPc="268436923">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437045" name="onUpdate" parent="SeedView" startPc="268436948">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437064" name="&lt;init&gt;" parent="ShopView" startPc="268437046">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437089" name="initialize" parent="ShopView" startPc="268437065">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437187" name="onUpdate" parent="ShopView" startPc="268437090">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
@@ -214,14 +323,14 @@
         <functionEntry accessMode="public" name="&lt;init&gt;" parent="JsonData">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436297" name="MainLayout" parent="Layouts" startPc="268435983">
+        <functionEntry accessMode="public" endPc="268437502" name="MainLayout" parent="Layouts" startPc="268437188">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436316" name="&lt;init&gt;" parent="MainMenu" startPc="268436298">
+        <functionEntry accessMode="public" endPc="268437521" name="&lt;init&gt;" parent="MainMenu" startPc="268437503">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436449" name="initialize" parent="MainMenu" startPc="268436317">
+        <functionEntry accessMode="public" endPc="268437654" name="initialize" parent="MainMenu" startPc="268437522">
             <documentation/>
         </functionEntry>
     </functions>

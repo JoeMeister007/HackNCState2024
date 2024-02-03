@@ -1,15 +1,15 @@
 import Toybox.Graphics;
 import Toybox.WatchUi;
 
-class HackNCState2024View extends WatchUi.View {
-
+class Page2 extends WatchUi.View {
+    var kermitBitMap;
     function initialize() {
         View.initialize();
+        kermitBitMap = Application.loadResource(Rez.Drawables.KermitImage);
     }
 
     // Load your resources here
     function onLayout(dc as Dc) as Void {
-        setLayout(Rez.Layouts.MainLayout(dc));
     }
 
     // Called when this View is brought to the foreground. Restore
@@ -20,8 +20,9 @@ class HackNCState2024View extends WatchUi.View {
 
     // Update the view
     function onUpdate(dc as Dc) as Void {
-        // Call the parent onUpdate function to redraw the layout
-        View.onUpdate(dc);
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
+        dc.clear();
+        dc.drawBitmap(0,0, kermitBitMap);
     }
 
     // Called when this View is removed from the screen. Save the

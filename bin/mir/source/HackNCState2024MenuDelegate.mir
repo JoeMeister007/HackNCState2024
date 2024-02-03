@@ -38,25 +38,34 @@ C_Users_Joey_Documents_GitHub_HackNCState2024_source_HackNCState2024MenuDelegate
         %tmp.7 = getv function %tmp.6 :println;
         %tmp.8 = "item 1";
         invoke %tmp.6 %tmp.7(%tmp.8);
+[ "C:\Users\Joey\Documents\GitHub\HackNCState2024\source\HackNCState2024MenuDelegate.mc" 14 12 ]
+        %tmp.9 = getm $.Toybox.WatchUi;
+        %tmp.10 = getv function %tmp.9 :pushView;
+        %tmp.14 = getv ? :Page2;
+        %tmp.11 = newc %tmp.14 ();
+        %tmp.15 = null;
+        %tmp.16 = getm $.Toybox.WatchUi;
+        %tmp.17 = getv %tmp.16 :SLIDE_IMMEDIATE;
+        invoke %tmp.9 %tmp.10(%tmp.11, %tmp.15, %tmp.17);
 C_Users_Joey_Documents_GitHub_HackNCState2024_source_HackNCState2024MenuDelegate_mc_12_29_stop:
         goto @C_Users_Joey_Documents_GitHub_HackNCState2024_source_HackNCState2024MenuDelegate_mc_12_8_if_end;
 C_Users_Joey_Documents_GitHub_HackNCState2024_source_HackNCState2024MenuDelegate_mc_12_8_if_false:
-[ "C:\Users\Joey\Documents\GitHub\HackNCState2024\source\HackNCState2024MenuDelegate.mc" 14 15 ]
-C_Users_Joey_Documents_GitHub_HackNCState2024_source_HackNCState2024MenuDelegate_mc_14_15_if_stmt:
-        %tmp.10 = lgetv %item;
-        %tmp.12 = const :item_2;
-        %tmp.13 = eq %tmp.10 %tmp.12;
-        bf %tmp.13 @C_Users_Joey_Documents_GitHub_HackNCState2024_source_HackNCState2024MenuDelegate_mc_14_15_if_end;
-C_Users_Joey_Documents_GitHub_HackNCState2024_source_HackNCState2024MenuDelegate_mc_14_15_if_true:
-C_Users_Joey_Documents_GitHub_HackNCState2024_source_HackNCState2024MenuDelegate_mc_14_36_start:
-[ "C:\Users\Joey\Documents\GitHub\HackNCState2024\source\HackNCState2024MenuDelegate.mc" 15 12 ]
-        %tmp.14 = getm $.Toybox.System;
-        %tmp.15 = getv function %tmp.14 :println;
-        %tmp.16 = "item 2";
-        invoke %tmp.14 %tmp.15(%tmp.16);
-C_Users_Joey_Documents_GitHub_HackNCState2024_source_HackNCState2024MenuDelegate_mc_14_36_stop:
-        goto @C_Users_Joey_Documents_GitHub_HackNCState2024_source_HackNCState2024MenuDelegate_mc_14_15_if_end;
-C_Users_Joey_Documents_GitHub_HackNCState2024_source_HackNCState2024MenuDelegate_mc_14_15_if_end:
+[ "C:\Users\Joey\Documents\GitHub\HackNCState2024\source\HackNCState2024MenuDelegate.mc" 15 15 ]
+C_Users_Joey_Documents_GitHub_HackNCState2024_source_HackNCState2024MenuDelegate_mc_15_15_if_stmt:
+        %tmp.19 = lgetv %item;
+        %tmp.21 = const :item_2;
+        %tmp.22 = eq %tmp.19 %tmp.21;
+        bf %tmp.22 @C_Users_Joey_Documents_GitHub_HackNCState2024_source_HackNCState2024MenuDelegate_mc_15_15_if_end;
+C_Users_Joey_Documents_GitHub_HackNCState2024_source_HackNCState2024MenuDelegate_mc_15_15_if_true:
+C_Users_Joey_Documents_GitHub_HackNCState2024_source_HackNCState2024MenuDelegate_mc_15_36_start:
+[ "C:\Users\Joey\Documents\GitHub\HackNCState2024\source\HackNCState2024MenuDelegate.mc" 16 12 ]
+        %tmp.23 = getm $.Toybox.System;
+        %tmp.24 = getv function %tmp.23 :println;
+        %tmp.25 = "item 2";
+        invoke %tmp.23 %tmp.24(%tmp.25);
+C_Users_Joey_Documents_GitHub_HackNCState2024_source_HackNCState2024MenuDelegate_mc_15_36_stop:
+        goto @C_Users_Joey_Documents_GitHub_HackNCState2024_source_HackNCState2024MenuDelegate_mc_15_15_if_end;
+C_Users_Joey_Documents_GitHub_HackNCState2024_source_HackNCState2024MenuDelegate_mc_15_15_if_end:
 C_Users_Joey_Documents_GitHub_HackNCState2024_source_HackNCState2024MenuDelegate_mc_12_8_if_end:
 C_Users_Joey_Documents_GitHub_HackNCState2024_source_HackNCState2024MenuDelegate_mc_11_48_stop:
     }
