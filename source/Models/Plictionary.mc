@@ -4,6 +4,7 @@ class Plictionary {
         "wildflowers" => {
             "black_eyed_susan" => {
                 "stepsToCompletion" => 2500,
+                "moneyPerStep" => .05,
                 "probability" => .2,
                 "displayName" => "Black Eyed Susan",
                 "funFact" => "Black-Eyed Susans\nare pioneer plants.",
@@ -11,6 +12,7 @@ class Plictionary {
             },
             "butterflyweed" => {
                 "stepsToCompletion" => 5000,
+                "moneyPerStep" => .10,
                 "probability" => .1,
                 "displayName" => "Butterflyweed",
                 "funFact" => "This plant is a foodsource\nfor Monarch caterpillars.",
@@ -18,6 +20,7 @@ class Plictionary {
             },
             "marigold" => {
                 "stepsToCompletion" => 500,
+                "moneyPerStep" => .01,
                 "probability" => .4,
                 "displayName" => "Marigold",
                 "funFact" => "Marigolds have natural\npest-repellent properties.",
@@ -26,6 +29,7 @@ class Plictionary {
             },
             "phlox" => {
                 "stepsToCompletion" => 1000,
+                "moneyPerStep" => .02,
                 "probability" => .3,
                 "displayName" => "Phlox",
                 "funFact" => "Deer avoid phlox due\nto its bitter taste.",

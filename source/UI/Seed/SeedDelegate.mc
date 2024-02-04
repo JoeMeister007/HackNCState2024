@@ -45,6 +45,10 @@ class SeedDelegate extends WatchUi.BehaviorDelegate {
         //Remove stepsOnPlant for this plant (allow extra
         //to remain though in case they've been gone a while)
         app.stepsOnPlant -= app.currentPlantModel.completionThreshold;
+
+        //The now grown plant existed for the remaining app.StepsOnPlant so update the money
+        app.money += app.stepsOnPlant * Plictionary.plictionary[app.currentCategory][app.currentPlant]["moneyPerStep"];
+
         //update plant unless error
         if (chosenPlant != "") {
             app.currentPlant = chosenPlant;
