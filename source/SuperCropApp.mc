@@ -11,6 +11,9 @@ class SuperCropApp extends Application.AppBase {
     var stepsOnPlant;
     //currentPlantModel
     var currentPlantModel;
+    //seed view thingy
+    var plantGrown = false;
+
     function initialize() {
         AppBase.initialize();
     }
@@ -32,9 +35,11 @@ class SuperCropApp extends Application.AppBase {
         //weird edge case of midnight and such
         //burn that bridge once we get there
         if (currSteps < lastSteps) {
+            //figure out some shenanigans here
             var yesterday = ActivityMonitor.getHistory();
             System.println(yesterday);
             System.println(yesterday[1]);
+            diff = -1;
         }
         else {
             diff = currSteps - lastSteps;

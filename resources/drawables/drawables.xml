@@ -2,6 +2,19 @@
     <bitmap id="LauncherIcon" filename="launcher_icon.png" />
     <bitmap id="KermitImage" filename="kermit.jpg"/>
 
+    <bitmap id="Wildflower_Black_Eyed_Susan_1" filename="wildflower_sprites/black_eyed_susan/black_eyed_susan_1.png"/>
+    <bitmap id="Wildflower_Black_Eyed_Susan_2" filename="wildflower_sprites/black_eyed_susan/black_eyed_susan_2.png"/>
+    <bitmap id="Wildflower_Black_Eyed_Susan_3" filename="wildflower_sprites/black_eyed_susan/black_eyed_susan_3.png"/>
+    <bitmap id="Wildflower_Black_Eyed_Susan_4" filename="wildflower_sprites/black_eyed_susan/black_eyed_susan_4.png"/>
+    <bitmap id="Wildflower_Black_Eyed_Susan_5" filename="wildflower_sprites/black_eyed_susan/black_eyed_susan_5.png"/>
+
+    <bitmap id="Wildflower_ButterFlyWeed_1" filename="wildflower_sprites/butterflyweed/butterflyweed_1.png"/>
+    <bitmap id="Wildflower_ButterFlyWeed_2" filename="wildflower_sprites/butterflyweed/butterflyweed_2.png"/>
+    <bitmap id="Wildflower_ButterFlyWeed_3" filename="wildflower_sprites/butterflyweed/butterflyweed_3.png"/>
+    <bitmap id="Wildflower_ButterFlyWeed_4" filename="wildflower_sprites/butterflyweed/butterflyweed_4.png"/>
+    <bitmap id="Wildflower_ButterFlyWeed_5" filename="wildflower_sprites/butterflyweed/butterflyweed_5.png"/>
+
+
     <bitmap id="Wildflower_Marigold_1" filename="wildflower_sprites/marigold/marigold_1.png"/>
     <bitmap id="Wildflower_Marigold_2" filename="wildflower_sprites/marigold/marigold_2.png"/>
     <bitmap id="Wildflower_Marigold_3" filename="wildflower_sprites/marigold/marigold_3.png"/>

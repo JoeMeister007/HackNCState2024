@@ -11,7 +11,7 @@ class MainMenuDelegate extends WatchUi.MenuInputDelegate {
     function onMenuItem(item as Symbol) as Void {
         switch (item) {
             case :seed:
-                WatchUi.pushView(new SeedView(), new WatchUi.BehaviorDelegate(), WatchUi.SLIDE_IMMEDIATE);
+                WatchUi.pushView(new SeedView(), new SeedDelegate(), WatchUi.SLIDE_IMMEDIATE);
                 break;
             case :encyclopedia:
                 WatchUi.pushView(new EncyclopediaView(), new WatchUi.BehaviorDelegate(), WatchUi.SLIDE_IMMEDIATE);

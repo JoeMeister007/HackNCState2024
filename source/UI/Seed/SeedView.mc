@@ -4,7 +4,8 @@ import Toybox.Math;
 
 class SeedView extends WatchUi.View {
     var drawable;
-    var lastPlantStage = -1;
+    var lastPlantStage = 1;
+    var lastPlantName = "jeff";
     function initialize() {
         WatchUi.View.initialize();
     }
@@ -24,27 +25,21 @@ class SeedView extends WatchUi.View {
             Application.getApp().stepsOnPlant += stepDiff;
             plantModel.onProgressUpdate(stepDiff);
         }
+        else if (stepDiff < 0) {
+            //find something better than this, but hacky solution
+            //for hacky competition for now
+            Application.getApp().lastSteps = 0;         
+        }
 
-        if (plantModel.stage != lastPlantStage) {
-            switch (plantModel.stage) {
-                case 1:
-                    drawable = Application.loadResource(Rez.Drawables.Wildflower_Phlox_1);
-                    break;
-                case 2:
-                    drawable = Application.loadResource(Rez.Drawables.Wildflower_Phlox_2);
-                    break;
-                case 3:
-                    drawable = Application.loadResource(Rez.Drawables.Wildflower_Phlox_3);
-                    break;
-                case 4:
-                    drawable = Application.loadResource(Rez.Drawables.Wildflower_Phlox_4);
-                    break;
-                case 5:
-                    drawable = Application.loadResource(Rez.Drawables.Wildflower_Phlox_5);
-                    break;
-                default:
-                    break;
-            }
+        if (plantModel.stage != lastPlantStage || plantModel.seedType != lastPlantName) {
+            lastPlantStage = plantModel.stage;
+            lastPlantName = plantModel.seedType;
+            drawable = Application.loadResource(Plictionary.plictionary[Application.getApp().currentCategory][lastPlantName]["images"][lastPlantStage - 1]);
+        }
+
+        if (lastPlantStage == 5 && !Application.getApp().plantGrown) {
+            WatchUi.pushView(new GrowtificationView(), new GrowtificationDelegate(), WatchUi.SLIDE_IMMEDIATE);
+            Application.getApp().plantGrown = true;
         }
         dc.drawBitmap(dc.getWidth() / 2 - drawable.getWidth() / 2,dc.getHeight() / 2 - drawable.getHeight() / 2,drawable);
         dc.drawText(dc.getWidth() / 2, 10, Graphics.FONT_SMALL, "Seed",Graphics.TEXT_JUSTIFY_CENTER);
