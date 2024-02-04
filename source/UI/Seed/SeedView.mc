@@ -41,8 +41,20 @@ class SeedView extends WatchUi.View {
             WatchUi.pushView(new GrowtificationView(), new GrowtificationDelegate(), WatchUi.SLIDE_IMMEDIATE);
             Application.getApp().plantGrown = true;
         }
+
+        //figure out percent complete to display
+        var completionPct = 1.0 * plantModel.progress / plantModel.completionThreshold;
+        if (completionPct > 1) {
+            completionPct = 1;
+        }
+        completionPct *= 100;
+        var completionString = "" + Math.floor(completionPct).toNumber() + "%";
+
+        //draw plant
         dc.drawBitmap(dc.getWidth() / 2 - drawable.getWidth() / 2,dc.getHeight() / 2 - drawable.getHeight() / 2,drawable);
-        dc.drawText(dc.getWidth() / 2, 10, Graphics.FONT_SMALL, "Seed",Graphics.TEXT_JUSTIFY_CENTER);
+        //draw text
+        dc.drawText(dc.getWidth() / 2, 10, Graphics.FONT_MEDIUM, "Growing",Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(dc.getWidth() / 2, dc.getHeight() - 10 - dc.getFontHeight(Graphics.FONT_MEDIUM), Graphics.FONT_MEDIUM, completionString,Graphics.TEXT_JUSTIFY_CENTER);
         WatchUi.requestUpdate();
     }
 }
