@@ -6,6 +6,7 @@ class PlantListingView extends WatchUi.View {
     var plvMenu;
     var cat;
     var firstTime = true;
+    var app = Application.getApp();
 
 
     function initialize(title, category) {
@@ -19,7 +20,15 @@ class PlantListingView extends WatchUi.View {
         var plantNames = plantsOfCat.keys();
 
         for (var i = 0; i < plantNames.size(); i++) {
-            plvMenu.addItem(plantsOfCat[plantNames[i]]["displayName"], plantNames[i]);
+
+
+            if (app.plantCountDict != null and
+                app.plantCountDict[category] != null and
+                app.plantCountDict[category][plantNames[i]] != null and 
+                app.plantCountDict[category][plantNames[i]] > 0) 
+            {
+                plvMenu.addItem(plantsOfCat[plantNames[i]]["displayName"], plantNames[i]);
+            }
         }
     }
 

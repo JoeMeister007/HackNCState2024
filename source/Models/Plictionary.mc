@@ -31,6 +31,18 @@ class Plictionary {
                 "funFact" => "Deer avoid phlox due\nto its bitter taste.",
                 "images" => [Rez.Drawables.Wildflower_Phlox_1, Rez.Drawables.Wildflower_Phlox_2, Rez.Drawables.Wildflower_Phlox_3, Rez.Drawables.Wildflower_Phlox_4, Rez.Drawables.Wildflower_Phlox_5]
             }
+        },
+        "flowers" => {
+
+        },
+        "ferns_shrubs" => {
+
+        },
+        "crops" => {
+
+        },
+        "trees" => {
+            
         }
     };
 
