@@ -23,10 +23,11 @@ class SeedModel {
         // Update progress counter
         self.progress += addedProgress;
 
-        // In case progress exceeds the completion threshold, no it doesn't
-        if (self.completionThreshold <= self.progress) {
-            self.progress = self.completionThreshold;
-        }
+        //Let's go over so we know how much to give the next one
+        // // In case progress exceeds the completion threshold, no it doesn't
+        // if (self.completionThreshold <= self.progress) {
+        //     self.progress = self.completionThreshold;
+        // }
 
         // Update the current stage based off of current progress.
         self.stage = 1 + Math.floor( 4 * self.progress / self.completionThreshold);

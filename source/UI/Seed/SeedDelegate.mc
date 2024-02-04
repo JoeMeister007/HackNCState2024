@@ -33,8 +33,9 @@ class SeedDelegate extends WatchUi.BehaviorDelegate {
             prob -= plantProb;
         }
 
-        //reset stepsOnPlant
-        app.stepsOnPlant = 0;
+        //Remove stepsOnPlant for this plant (allow extra
+        //to remain though in case they've been gone a while)
+        app.stepsOnPlant -= app.currentPlantModel.completionThreshold;
         //update plant unless error
         if (chosenPlant != "") {
             app.currentPlant = chosenPlant;
