@@ -2,15 +2,20 @@ import Toybox.WatchUi;
 import Toybox.Graphics;
 
 class EncyclopediaView extends WatchUi.View {
+
+    var encMenu;
     function initialize() {
         WatchUi.View.initialize();
+        encMenu = new WatchUi.Menu();
+        encMenu.setTitle("Encyclopedia");
+        encMenu.addItem("Wildflowers", :wildflowers);
+        encMenu.addItem("Cultivated Flowers", :flowers);
+        encMenu.addItem("Ferns and Shrubs", :ferns_shrubs);
+        encMenu.addItem("Agriculture", :crops);
+        encMenu.addItem("Trees", :trees);
     }
 
     function onUpdate(dc) {
-        //clear the screen
-        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
-        dc.clear();
-
-        dc.drawText(dc.getWidth() / 2, dc.getHeight() / 2, Graphics.FONT_SMALL, "Encyclopedia",Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+        WatchUi.pushView(encMenu, new EncyclopediaDelegate(), WatchUi.SLIDE_IMMEDIATE);
     }
 }
