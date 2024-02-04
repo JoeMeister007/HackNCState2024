@@ -10,8 +10,9 @@ class SeedDelegate extends WatchUi.BehaviorDelegate {
 
     function onSelect() {
         var app = Application.getApp();
-        //if the plant isn't grown, macht nichts
+        //if the plant isn't grown show the change category menu
         if (!Application.getApp().plantGrown) {
+            WatchUi.pushView(app.getCurrentCategoryMenu(), new ChangeCategoryDelegate(), WatchUi.SLIDE_IMMEDIATE);
             return true;
         }
 

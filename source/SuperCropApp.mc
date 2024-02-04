@@ -158,6 +158,8 @@ class SuperCropApp extends Application.AppBase {
             Properties.setValue("stepsOnPlant", stepsOnPlant);
 
             Storage.setValue("plantCountDict", plantCountDict);
+            Storage.setValue("money", money);
+            Storage.setValue("categoriesUnlocked", categoriesUnlocked);
 
         } else{
             setProperty("lastSteps", lastSteps);
@@ -166,6 +168,8 @@ class SuperCropApp extends Application.AppBase {
             setProperty("stepsOnPlant", stepsOnPlant);
 
             setProperty("plantCountDict", plantCountDict);
+            setProperty("money", money);
+            setProperty("categoriesUnlocked", categoriesUnlocked);
         }
     }
 
@@ -189,6 +193,17 @@ class SuperCropApp extends Application.AppBase {
             shopMenu.addItem("" + prestigePrice + "- Prestige", :prestige);
         }
         return shopMenu;
+    }
+
+    function getCurrentCategoryMenu() {
+        var menu = new WatchUi.Menu();
+        menu.setTitle("Change Plant Type");
+        for (var i = 0; i < categories.size(); i++) {
+            if (categoriesUnlocked[i] == true) {
+                menu.addItem(categories[i], catSymbols[i]);
+            }
+        }
+        return menu;
     }
 
 }

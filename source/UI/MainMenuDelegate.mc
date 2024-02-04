@@ -17,7 +17,7 @@ class MainMenuDelegate extends WatchUi.MenuInputDelegate {
                 WatchUi.pushView(new EncyclopediaView(), new WatchUi.BehaviorDelegate(), WatchUi.SLIDE_IMMEDIATE);
                 break;
             case :shop:
-                WatchUi.pushView(Application.getApp().getShopMenu(), new WatchUi.BehaviorDelegate(), WatchUi.SLIDE_IMMEDIATE);
+                WatchUi.pushView(Application.getApp().getShopMenu(), new ShopDelegate(), WatchUi.SLIDE_IMMEDIATE);
                 break;
             case :stats:
                 WatchUi.pushView(new StatsView(), new WatchUi.BehaviorDelegate(), WatchUi.SLIDE_IMMEDIATE);
