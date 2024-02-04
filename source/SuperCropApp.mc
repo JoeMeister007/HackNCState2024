@@ -9,10 +9,21 @@ class SuperCropApp extends Application.AppBase {
     var currentPlant;
     var currentCategory;
     var stepsOnPlant;
+    var plantCountDict;
+    var money;
+
     //currentPlantModel
     var currentPlantModel;
     //seed view thingy
     var plantGrown = false;
+
+    //categories (in order of unlock)
+    var categories = ["wildflowers", "crops", "trees"];
+    var categoriesUnlocked;
+    var categoryUnlockPrice = [0, 1000, 10000];
+    var prestigePrice = 1000000;
+    var catSymbols = [:cat1, :cat2, :cat3, :cat4, :cat5, :cat6, :cat7, :cat8, :cat9, :cat10];
+
 
     function initialize() {
         AppBase.initialize();
@@ -37,8 +48,6 @@ class SuperCropApp extends Application.AppBase {
         if (currSteps < lastSteps) {
             //figure out some shenanigans here
             var yesterday = ActivityMonitor.getHistory();
-            System.println(yesterday);
-            System.println(yesterday[1]);
             diff = -1;
         }
         else {
@@ -57,13 +66,21 @@ class SuperCropApp extends Application.AppBase {
                 currentPlant = Properties.getValue("currentPlant");
                 currentCategory = Properties.getValue("currentCategory");
                 stepsOnPlant = Properties.getValue("stepsOnPlant");
+                money = Properties.getValue("money");
+
+                plantCountDict = Storage.getValue("plantCountDict");
+                categoriesUnlocked = Storage.getValue("categoriesUnlocked");
             }
             else {
                 lastSteps = getCurrentSteps();
                 currentPlant = "marigold";
                 currentCategory = "wildflowers";
                 stepsOnPlant = 0;
+                money = 0;
                 Properties.setValue("firstTime", false);
+
+                plantCountDict = {};
+                categoriesUnlocked = [true, false, false];
             }
 
         } else{
@@ -73,19 +90,62 @@ class SuperCropApp extends Application.AppBase {
                 currentPlant = getProperty("currentPlant");
                 currentCategory = getProperty("currentCategory");
                 stepsOnPlant = getProperty("stepsOnPlant");
+                money = getProperty("money");
+
+                plantCountDict = getProperty("plantCountDict");
+                categoriesUnlocked = getProperty("categoriesUnlocked");
             }
             else {
                 lastSteps = ActivityMonitor.getInfo().steps;
                 currentPlant = "marigold";
                 currentCategory = "wildflowers";
                 stepsOnPlant = 0;
+                money = 0;
                 setProperty("firstTime", false);
+
+                plantCountDict = {};
+                categoriesUnlocked = [true, false, false];
             }
 
         }
 
+        // With the variables loaded, set the totals grown
+
         currentPlantModel = new SeedModel(currentPlant, Plictionary.plictionary[currentCategory][currentPlant]["stepsToCompletion"], stepsOnPlant);
 
+    }
+
+    function updateSeedAndMoney() {
+        var currSteps = getCurrentSteps();
+        var stepDiff = getStepDifference();
+
+        if (stepDiff > 0) {
+            //update steps
+            lastSteps = currSteps;
+            stepsOnPlant += stepDiff;
+            currentPlantModel.onProgressUpdate(stepDiff);
+
+            //update money
+            //note: we won't care about plants that have technically grown, but haven't
+            //been clicked on yet. The seed delegate can retroactively add the money for those
+            for (var i = 0;i < plantCountDict.size(); i++) {
+                //for each category
+                var cat = plantCountDict.keys()[i];
+                var categoryTalleys = plantCountDict[cat];
+                for (var j = 0; j < categoryTalleys.size(); j++) {
+                    var plnt = categoryTalleys.keys()[j];
+                    //for each plant
+                    money += categoryTalleys[plnt] * stepDiff * Plictionary.plictionary[cat][plnt]["moneyPerStep"];
+                    //money is num plants * money per step for plant * steps
+                }
+            }
+        }
+        else if (stepDiff < 0) {
+            //find something better than this, but hacky solution
+            //for hacky competition for now
+            lastSteps = 0;
+            updateSeedAndMoney();      
+        }
     }
 
     // onStop() is called when your application is exiting
@@ -110,12 +170,44 @@ class SuperCropApp extends Application.AppBase {
             setProperty("currentPlant", currentPlant);
             setProperty("currentCategory", currentCategory);
             setProperty("stepsOnPlant", stepsOnPlant);
+
+            setProperty("plantCountDict", plantCountDict);
+            setProperty("money", money);
+            setProperty("categoriesUnlocked", categoriesUnlocked);
         }
     }
 
     // Return the initial view of your application here
     function getInitialView() as Array<Views or InputDelegates>? {
         return [ new InitialView(), new BehaviorDelegate() ] as Array<Views or InputDelegates>;
+    }
+
+    function getShopMenu() {
+        var shopMenu = new WatchUi.Menu();
+        shopMenu.setTitle("Bal - " + money.format("%.2f"));
+        var updated = false;
+        for (var i = 0; i < categories.size(); i++) {
+            if (categoriesUnlocked[i] != true) {
+                updated = true;
+                shopMenu.addItem("" +categoryUnlockPrice[i] + "-" + categories[i], catSymbols[i]);
+                break;
+            }
+        }
+        if (!updated) {
+            shopMenu.addItem("" + prestigePrice + "- Prestige", :prestige);
+        }
+        return shopMenu;
+    }
+
+    function getCurrentCategoryMenu() {
+        var menu = new WatchUi.Menu();
+        menu.setTitle("Change Plant Type");
+        for (var i = 0; i < categories.size(); i++) {
+            if (categoriesUnlocked[i] == true) {
+                menu.addItem(categories[i], catSymbols[i]);
+            }
+        }
+        return menu;
     }
 
 }

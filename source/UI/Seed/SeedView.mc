@@ -17,19 +17,7 @@ class SeedView extends WatchUi.View {
 
         var plantModel = Application.getApp().currentPlantModel;
         //update steps
-        var currSteps = Application.getApp().getCurrentSteps();
-        var stepDiff = Application.getApp().getStepDifference();
-
-        if (stepDiff > 0) {
-            Application.getApp().lastSteps = currSteps;
-            Application.getApp().stepsOnPlant += stepDiff;
-            plantModel.onProgressUpdate(stepDiff);
-        }
-        else if (stepDiff < 0) {
-            //find something better than this, but hacky solution
-            //for hacky competition for now
-            Application.getApp().lastSteps = 0;         
-        }
+        Application.getApp().updateSeedAndMoney();
 
         if (plantModel.stage != lastPlantStage || plantModel.seedType != lastPlantName) {
             lastPlantStage = plantModel.stage;

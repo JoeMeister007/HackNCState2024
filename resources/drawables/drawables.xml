@@ -26,6 +26,24 @@
     <bitmap id="Wildflower_Phlox_3" filename="wildflower_sprites/phlox/phlox_3.png"/>
     <bitmap id="Wildflower_Phlox_4" filename="wildflower_sprites/phlox/phlox_4.png"/>
     <bitmap id="Wildflower_Phlox_5" filename="wildflower_sprites/phlox/phlox_5.png"/>
+
+    <bitmap id="Tree_Pine_1" filename="tree_sprites/pine_tree_sprites/pine_tree_1.png"/>
+    <bitmap id="Tree_Pine_2" filename="tree_sprites/pine_tree_sprites/pine_tree_2.png"/>
+    <bitmap id="Tree_Pine_3" filename="tree_sprites/pine_tree_sprites/pine_tree_3.png"/>
+    <bitmap id="Tree_Pine_4" filename="tree_sprites/pine_tree_sprites/pine_tree_4.png"/>
+    <bitmap id="Tree_Pine_5" filename="tree_sprites/pine_tree_sprites/pine_tree_5.png"/>
+
+    <bitmap id="Tree_Dogwood_1" filename="tree_sprites/dogwood_tree_sprites/dogwood_tree_1.png"/>
+    <bitmap id="Tree_Dogwood_2" filename="tree_sprites/dogwood_tree_sprites/dogwood_tree_2.png"/>
+    <bitmap id="Tree_Dogwood_3" filename="tree_sprites/dogwood_tree_sprites/dogwood_tree_3.png"/>
+    <bitmap id="Tree_Dogwood_4" filename="tree_sprites/dogwood_tree_sprites/dogwood_tree_4.png"/>
+    <bitmap id="Tree_Dogwood_5" filename="tree_sprites/dogwood_tree_sprites/dogwood_tree_5.png"/>
+
+    <bitmap id="Crop_Strawberry_1" filename="crop_sprites/strawberry_sprites/strawberry_1.png"/>
+    <bitmap id="Crop_Strawberry_2" filename="crop_sprites/strawberry_sprites/strawberry_2.png"/>
+    <bitmap id="Crop_Strawberry_3" filename="crop_sprites/strawberry_sprites/strawberry_3.png"/>
+    <bitmap id="Crop_Strawberry_4" filename="crop_sprites/strawberry_sprites/strawberry_4.png"/>
+    <bitmap id="Crop_Strawberry_5" filename="crop_sprites/strawberry_sprites/strawberry_5.png"/>
     
 
 </drawables>

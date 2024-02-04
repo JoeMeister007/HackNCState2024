@@ -4,4 +4,5 @@
     <property id="currentPlant" type="string">marigold</property>
     <property id="currentCategory" type="string">wildflowers</property>
     <property id="stepsOnPlant" type = "number">0</property>
+    <property id="money" type="number">0</property>
 </properties>
