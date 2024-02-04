@@ -1,51 +1,73 @@
-[ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B3600-00\source\Rez.mcgen"; @line = 1; ]
+[ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B2886-00\source\Rez.mcgen"; @line = 1; ]
 import Toybox.Lang;
-[ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B3600-00\source\Rez.mcgen"; @line = 2; ]
+[ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B2886-00\source\Rez.mcgen"; @line = 2; ]
 using Toybox.WatchUi;
-[ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B3600-00\source\Rez.mcgen"; @line = 3; ]
+[ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B2886-00\source\Rez.mcgen"; @line = 3; ]
 using Toybox.WatchUi as :Ui;
-[ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B3600-00\source\Rez.mcgen"; @line = 4; ]
+[ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B2886-00\source\Rez.mcgen"; @line = 4; ]
 using Toybox.Graphics;
-[ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B3600-00\source\Rez.mcgen"; @line = 5; ]
+[ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B2886-00\source\Rez.mcgen"; @line = 5; ]
 using Toybox.Graphics as :Gfx;
-[ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B3600-00\source\Rez.mcgen"; @line = 7; ]
+[ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B2886-00\source\Rez.mcgen"; @line = 7; ]
 module Rez {
-    [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B3600-00\source\Rez.mcgen"; @line = 7; ]
+    [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B2886-00\source\Rez.mcgen"; @line = 7; ]
     <init> {
     }
-    [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B3600-00\source\Rez.mcgen"; @line = 8; ]
+    [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B2886-00\source\Rez.mcgen"; @line = 8; ]
     module Drawables {
-        [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B3600-00\source\Rez.mcgen"; @line = 8; ]
+        [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B2886-00\source\Rez.mcgen"; @line = 8; ]
         <init> {
         }
-        [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B3600-00\source\Rez.mcgen"; @line = 9; @position = 27; initialized = true; ]
+        [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B2886-00\source\Rez.mcgen"; @line = 9; @position = 27; initialized = true; ]
+        var KermitImage as Symbol;
+        [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B2886-00\source\Rez.mcgen"; @line = 10; @position = 27; initialized = true; ]
+        var Wildflower_Poppy_1 as Symbol;
+        [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B2886-00\source\Rez.mcgen"; @line = 11; @position = 27; initialized = true; ]
+        var Wildflower_Poppy_2 as Symbol;
+        [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B2886-00\source\Rez.mcgen"; @line = 12; @position = 27; initialized = true; ]
+        var Wildflower_Poppy_3 as Symbol;
+        [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B2886-00\source\Rez.mcgen"; @line = 13; @position = 27; initialized = true; ]
+        var Wildflower_Poppy_4 as Symbol;
+        [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B2886-00\source\Rez.mcgen"; @line = 14; @position = 27; initialized = true; ]
+        var Wildflower_Poppy_5 as Symbol;
+        [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B2886-00\source\Rez.mcgen"; @line = 15; @position = 27; initialized = true; ]
+        var Wildflower_Marigold_1 as Symbol;
+        [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B2886-00\source\Rez.mcgen"; @line = 16; @position = 27; initialized = true; ]
+        var Wildflower_Marigold_2 as Symbol;
+        [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B2886-00\source\Rez.mcgen"; @line = 17; @position = 27; initialized = true; ]
+        var Wildflower_Marigold_3 as Symbol;
+        [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B2886-00\source\Rez.mcgen"; @line = 18; @position = 27; initialized = true; ]
+        var Wildflower_Marigold_4 as Symbol;
+        [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B2886-00\source\Rez.mcgen"; @line = 19; @position = 27; initialized = true; ]
+        var Wildflower_Marigold_5 as Symbol;
+        [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B2886-00\source\Rez.mcgen"; @line = 20; @position = 27; initialized = true; ]
         var id_monkey as Symbol;
-        [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B3600-00\source\Rez.mcgen"; @line = 10; @position = 27; initialized = true; ]
+        [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B2886-00\source\Rez.mcgen"; @line = 21; @position = 27; initialized = true; ]
         var LauncherIcon as Symbol;
     }
-    [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B3600-00\source\Rez.mcgen"; @line = 13; ]
+    [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B2886-00\source\Rez.mcgen"; @line = 24; ]
     module Fonts {
-        [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B3600-00\source\Rez.mcgen"; @line = 13; ]
+        [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B2886-00\source\Rez.mcgen"; @line = 24; ]
         <init> {
         }
     }
-    [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B3600-00\source\Rez.mcgen"; @line = 16; ]
+    [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B2886-00\source\Rez.mcgen"; @line = 27; ]
     module JsonData {
-        [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B3600-00\source\Rez.mcgen"; @line = 16; ]
+        [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B2886-00\source\Rez.mcgen"; @line = 27; ]
         <init> {
         }
     }
-    [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B3600-00\source\Rez.mcgen"; @line = 19; ]
+    [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B2886-00\source\Rez.mcgen"; @line = 30; ]
     module Layouts {
-        [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B3600-00\source\Rez.mcgen"; @line = 19; ]
+        [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B2886-00\source\Rez.mcgen"; @line = 30; ]
         <init> {
         }
-        [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B3600-00\source\Rez.mcgen"; @line = 20; ]
+        [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B2886-00\source\Rez.mcgen"; @line = 31; ]
         function MainLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-C_Users_Joey_Documents_GitHub_HackNCState2024_bin_gen_006_B3600_00_source_Rez_mcgen_20_74_start:
-[ "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B3600-00\source\Rez.mcgen" 21 12 ]
-            [ "C_Users_Joey_Documents_GitHub_HackNCState2024_bin_gen_006_B3600_00_source_Rez_mcgen_20_74_start" "C_Users_Joey_Documents_GitHub_HackNCState2024_bin_gen_006_B3600_00_source_Rez_mcgen_20_74_stop" ]
-            %rez_cmp_local_text_4205352541.1 = local;
+C_Users_Joey_Documents_GitHub_HackNCState2024_bin_gen_006_B2886_00_source_Rez_mcgen_31_74_start:
+[ "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B2886-00\source\Rez.mcgen" 32 12 ]
+            [ "C_Users_Joey_Documents_GitHub_HackNCState2024_bin_gen_006_B2886_00_source_Rez_mcgen_31_74_start" "C_Users_Joey_Documents_GitHub_HackNCState2024_bin_gen_006_B2886_00_source_Rez_mcgen_31_74_stop" ]
+            %rez_cmp_local_text_7212287332.1 = local;
             %tmp.3 = getm $.Toybox.WatchUi;
             %tmp.4 = getv function ? %tmp.3 :Text;
             %tmp.5 = newd 6;
@@ -82,9 +104,9 @@ C_Users_Joey_Documents_GitHub_HackNCState2024_bin_gen_006_B3600_00_source_Rez_mc
             %tmp.42 = dup %tmp.37;
             %tmp.43 = aputv %tmp.42 %tmp.39 %tmp.41;
             %tmp.1 = newc %tmp.4 (%tmp.43);
-            lputv %rez_cmp_local_text_4205352541.1 %tmp.1;
-[ "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B3600-00\source\Rez.mcgen" 23 12 ]
-            [ "C_Users_Joey_Documents_GitHub_HackNCState2024_bin_gen_006_B3600_00_source_Rez_mcgen_20_74_start" "C_Users_Joey_Documents_GitHub_HackNCState2024_bin_gen_006_B3600_00_source_Rez_mcgen_20_74_stop" ]
+            lputv %rez_cmp_local_text_7212287332.1 %tmp.1;
+[ "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B2886-00\source\Rez.mcgen" 34 12 ]
+            [ "C_Users_Joey_Documents_GitHub_HackNCState2024_bin_gen_006_B2886_00_source_Rez_mcgen_31_74_start" "C_Users_Joey_Documents_GitHub_HackNCState2024_bin_gen_006_B2886_00_source_Rez_mcgen_31_74_stop" ]
             %rez_cmp_local_bitmap_id_monkey.2 = local;
             %tmp.46 = getm $.Toybox.WatchUi;
             %tmp.47 = getv function ? %tmp.46 :Bitmap;
@@ -111,7 +133,7 @@ C_Users_Joey_Documents_GitHub_HackNCState2024_bin_gen_006_B3600_00_source_Rez_mc
             %tmp.72 = aputv %tmp.71 %tmp.69 %tmp.70;
             %tmp.44 = newc %tmp.47 (%tmp.72);
             lputv %rez_cmp_local_bitmap_id_monkey.2 %tmp.44;
-[ "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B3600-00\source\Rez.mcgen" 24 12 ]
+[ "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B2886-00\source\Rez.mcgen" 35 12 ]
             %tmp.73 = lgetv %rez_cmp_local_bitmap_id_monkey.2;
             %tmp.74 = getv function %tmp.73 :setLocation;
             %tmp.75 = 240;
@@ -123,40 +145,40 @@ C_Users_Joey_Documents_GitHub_HackNCState2024_bin_gen_006_B3600_00_source_Rez_mc
             %tmp.81 = lgetv %rez_cmp_local_bitmap_id_monkey.2;
             %tmp.82 = getv %tmp.81 :locY;
             invoke %tmp.73 %tmp.74(%tmp.80, %tmp.82);
-[ "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B3600-00\source\Rez.mcgen" 26 12 ]
+[ "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B2886-00\source\Rez.mcgen" 37 12 ]
             %tmp.83 = newa Array<WatchUi.Drawable> 2;
-            %tmp.85 = lgetv %rez_cmp_local_text_4205352541.1;
+            %tmp.85 = lgetv %rez_cmp_local_text_7212287332.1;
             %tmp.86 = dup %tmp.83;
             %tmp.87 = aputv %tmp.86 0 %tmp.85;
             %tmp.89 = lgetv %rez_cmp_local_bitmap_id_monkey.2;
             %tmp.90 = dup %tmp.87;
             %tmp.91 = aputv %tmp.90 1 %tmp.89;
             ret %tmp.91;
-C_Users_Joey_Documents_GitHub_HackNCState2024_bin_gen_006_B3600_00_source_Rez_mcgen_20_74_stop:
+C_Users_Joey_Documents_GitHub_HackNCState2024_bin_gen_006_B2886_00_source_Rez_mcgen_31_74_stop:
         }
     }
-    [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B3600-00\source\Rez.mcgen"; @line = 30; ]
+    [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B2886-00\source\Rez.mcgen"; @line = 41; ]
     module Menus {
-        [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B3600-00\source\Rez.mcgen"; @line = 30; ]
+        [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B2886-00\source\Rez.mcgen"; @line = 41; ]
         <init> {
         }
-        [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B3600-00\source\Rez.mcgen"; @line = 31; ]
+        [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B2886-00\source\Rez.mcgen"; @line = 42; ]
         class MainMenu extends WatchUi.Menu{
-            [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B3600-00\source\Rez.mcgen"; @line = 31; ]
+            [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B2886-00\source\Rez.mcgen"; @line = 42; ]
             <init> {
             }
-            [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B3600-00\source\Rez.mcgen"; @line = 31; ]
+            [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B2886-00\source\Rez.mcgen"; @line = 42; ]
             static
             <init> {
             }
-            [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B3600-00\source\Rez.mcgen"; @line = 32; ]
+            [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B2886-00\source\Rez.mcgen"; @line = 43; ]
             function initialize() as Void {
-C_Users_Joey_Documents_GitHub_HackNCState2024_bin_gen_006_B3600_00_source_Rez_mcgen_32_34_start:
-[ "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B3600-00\source\Rez.mcgen" 33 16 ]
+C_Users_Joey_Documents_GitHub_HackNCState2024_bin_gen_006_B2886_00_source_Rez_mcgen_43_34_start:
+[ "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B2886-00\source\Rez.mcgen" 44 16 ]
                 %tmp.2 = getv ? :Menu;
                 %tmp.3 = getv function %tmp.2 :initialize;
                 invoke %tmp.2 %tmp.3();
-[ "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B3600-00\source\Rez.mcgen" 34 16 ]
+[ "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B2886-00\source\Rez.mcgen" 45 16 ]
                 %tmp.4 = self;
                 %tmp.5 = getv function %tmp.4 :addItem;
                 %tmp.6 = getm $.Toybox.WatchUi;
@@ -169,7 +191,7 @@ C_Users_Joey_Documents_GitHub_HackNCState2024_bin_gen_006_B3600_00_source_Rez_mc
                 %tmp.13 = as %tmp.12 String;
                 %tmp.15 = const :item_1;
                 invoke %tmp.4 %tmp.5(%tmp.13, %tmp.15);
-[ "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B3600-00\source\Rez.mcgen" 35 16 ]
+[ "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B2886-00\source\Rez.mcgen" 46 16 ]
                 %tmp.16 = self;
                 %tmp.17 = getv function %tmp.16 :addItem;
                 %tmp.18 = getm $.Toybox.WatchUi;
@@ -182,25 +204,25 @@ C_Users_Joey_Documents_GitHub_HackNCState2024_bin_gen_006_B3600_00_source_Rez_mc
                 %tmp.25 = as %tmp.24 String;
                 %tmp.27 = const :item_2;
                 invoke %tmp.16 %tmp.17(%tmp.25, %tmp.27);
-C_Users_Joey_Documents_GitHub_HackNCState2024_bin_gen_006_B3600_00_source_Rez_mcgen_32_34_stop:
+C_Users_Joey_Documents_GitHub_HackNCState2024_bin_gen_006_B2886_00_source_Rez_mcgen_43_34_stop:
             }
         }
     }
-    [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B3600-00\source\Rez.mcgen"; @line = 40; ]
+    [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B2886-00\source\Rez.mcgen"; @line = 51; ]
     module Strings {
-        [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B3600-00\source\Rez.mcgen"; @line = 40; ]
+        [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B2886-00\source\Rez.mcgen"; @line = 51; ]
         <init> {
         }
-        [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B3600-00\source\Rez.mcgen"; @line = 41; @position = 27; initialized = true; ]
+        [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B2886-00\source\Rez.mcgen"; @line = 52; @position = 27; initialized = true; ]
         var menu_label_1 as Symbol;
-        [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B3600-00\source\Rez.mcgen"; @line = 42; @position = 27; initialized = true; ]
+        [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B2886-00\source\Rez.mcgen"; @line = 53; @position = 27; initialized = true; ]
         var menu_label_2 as Symbol;
-        [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B3600-00\source\Rez.mcgen"; @line = 43; @position = 27; initialized = true; ]
+        [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B2886-00\source\Rez.mcgen"; @line = 54; @position = 27; initialized = true; ]
         var prompt as Symbol;
-        [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B3600-00\source\Rez.mcgen"; @line = 44; @position = 27; initialized = true; ]
+        [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B2886-00\source\Rez.mcgen"; @line = 55; @position = 27; initialized = true; ]
         var AppName as Symbol;
     }
 }
-[ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B3600-00\source\Rez.mcgen"; @line = 1; ]
+[ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\bin\gen\006-B2886-00\source\Rez.mcgen"; @line = 1; ]
 <init> {
 }
