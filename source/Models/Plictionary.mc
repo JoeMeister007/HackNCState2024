@@ -43,10 +43,32 @@ class Plictionary {
 
         // },
         "crops" => {
-
+            "strawberry" => {
+                "stepsToCompletion" => 1000,
+                "moneyPerStep" => .05,
+                "probability" => 1,
+                "displayName" => "Strawberry",
+                "funFact" => "Strawberries are the only fruit\nwith seeds on the outside.",
+                "images" => [Rez.Drawables.Crop_Strawberry_1, Rez.Drawables.Crop_Strawberry_2, Rez.Drawables.Crop_Strawberry_3, Rez.Drawables.Crop_Strawberry_4, Rez.Drawables.Crop_Strawberry_5]
+            }
         },
         "trees" => {
-            
+            "pine_tree" => {
+                "stepsToCompletion" => 1000,
+                "moneyPerStep" => .05,
+                "probability" => .5,
+                "displayName" => "Pine Tree",
+                "funFact" => "Pine trees\nare evergreens.",
+                "images" => [Rez.Drawables.Tree_Pine_1, Rez.Drawables.Tree_Pine_2, Rez.Drawables.Tree_Pine_3, Rez.Drawables.Tree_Pine_4, Rez.Drawables.Tree_Pine_5]
+            },
+            "dogwood_tree" => {
+                "stepsToCompletion" => 1000,
+                "moneyPerStep" => .05,
+                "probability" => .5,
+                "displayName" => "Dogwood Tree",
+                "funFact" => "The dogwood is the state\ntree of North Carolina.",
+                "images" => [Rez.Drawables.Tree_Dogwood_1, Rez.Drawables.Tree_Dogwood_2, Rez.Drawables.Tree_Dogwood_3, Rez.Drawables.Tree_Dogwood_4, Rez.Drawables.Tree_Dogwood_5]
+            }
         }
     };
 
