@@ -1,6 +1,6 @@
 class Plictionary {
 
-    public var plictionary = {
+    public static var plictionary = {
         "wildflowers" => {
             "black_eyed_susan" => {
                 "stepsToCompletion" => 2500,

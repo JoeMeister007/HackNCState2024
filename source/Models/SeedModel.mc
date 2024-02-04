@@ -11,10 +11,10 @@ class SeedModel {
     public var completionThreshold;     // An integer representing the total amount of time until the plant is fully grown.
     public var stage;                   // An integer between 1 and 5 representing the plant's stage of life.
 
-    public function initialize(species, threshold) {
+    public function initialize(species, threshold, progress) {
         self.seedType = species;
         self.completionThreshold = threshold;
-        self.progress = 0;
+        self.progress = progress;
         self.stage = 1;
     }
 
@@ -30,6 +30,9 @@ class SeedModel {
 
         // Update the current stage based off of current progress.
         self.stage = 1 + Math.floor( 4 * self.progress / self.completionThreshold);
+        if (self.stage > 5) {
+            self.stage = 5;
+        }
     }
 
 }
