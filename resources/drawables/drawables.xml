@@ -1,5 +1,18 @@
 <drawables>
     <bitmap id="LauncherIcon" filename="launcher_icon.png" />
     <bitmap id="KermitImage" filename="kermit.jpg"/>
+
+    <bitmap id="Wildflower_Poppy_1" filename="wildflower_sprites/california_poppy/california_poppy_1.png"/>
+    <bitmap id="Wildflower_Poppy_2" filename="wildflower_sprites/california_poppy/california_poppy_2.png"/>
+    <bitmap id="Wildflower_Poppy_3" filename="wildflower_sprites/california_poppy/california_poppy_3.png"/>
+    <bitmap id="Wildflower_Poppy_4" filename="wildflower_sprites/california_poppy/california_poppy_4.png"/>
+    <bitmap id="Wildflower_Poppy_5" filename="wildflower_sprites/california_poppy/california_poppy_5.png"/>
+
+    <bitmap id="Wildflower_Marigold_1" filename="wildflower_sprites/marigold/marigold_1.png"/>
+    <bitmap id="Wildflower_Marigold_2" filename="wildflower_sprites/marigold/marigold_2.png"/>
+    <bitmap id="Wildflower_Marigold_3" filename="wildflower_sprites/marigold/marigold_3.png"/>
+    <bitmap id="Wildflower_Marigold_4" filename="wildflower_sprites/marigold/marigold_4.png"/>
+    <bitmap id="Wildflower_Marigold_5" filename="wildflower_sprites/marigold/marigold_5.png"/>
+
 </drawables>
 
