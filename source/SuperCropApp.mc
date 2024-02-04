@@ -17,6 +17,14 @@ class SuperCropApp extends Application.AppBase {
     //seed view thingy
     var plantGrown = false;
 
+    //categories (in order of unlock)
+    var categories = ["wildflowers", "crops", "trees"];
+    var categoriesUnlocked;
+    var categoryUnlockPrice = [0, 1000, 10000];
+    var prestigePrice = 1000000;
+    var catSymbols = [:cat1, :cat2, :cat3, :cat4, :cat5, :cat6, :cat7, :cat8, :cat9, :cat10];
+
+
     function initialize() {
         AppBase.initialize();
     }
@@ -61,6 +69,7 @@ class SuperCropApp extends Application.AppBase {
                 money = Properties.getValue("money");
 
                 plantCountDict = Storage.getValue("plantCountDict");
+                categoriesUnlocked = Storage.getValue("categoriesUnlocked");
             }
             else {
                 lastSteps = getCurrentSteps();
@@ -71,6 +80,7 @@ class SuperCropApp extends Application.AppBase {
                 Properties.setValue("firstTime", false);
 
                 plantCountDict = {};
+                categoriesUnlocked = [true, false, false];
             }
 
         } else{
@@ -83,6 +93,7 @@ class SuperCropApp extends Application.AppBase {
                 money = getProperty("money");
 
                 plantCountDict = getProperty("plantCountDict");
+                categoriesUnlocked = getProperty("categoriesUnlocked");
             }
             else {
                 lastSteps = ActivityMonitor.getInfo().steps;
@@ -93,6 +104,7 @@ class SuperCropApp extends Application.AppBase {
                 setProperty("firstTime", false);
 
                 plantCountDict = {};
+                categoriesUnlocked = [true, false, false];
             }
 
         }
@@ -160,6 +172,23 @@ class SuperCropApp extends Application.AppBase {
     // Return the initial view of your application here
     function getInitialView() as Array<Views or InputDelegates>? {
         return [ new InitialView(), new BehaviorDelegate() ] as Array<Views or InputDelegates>;
+    }
+
+    function getShopMenu() {
+        var shopMenu = new WatchUi.Menu();
+        shopMenu.setTitle("Bal - " + money.format("%.2f"));
+        var updated = false;
+        for (var i = 0; i < categories.size(); i++) {
+            if (categoriesUnlocked[i] != true) {
+                updated = true;
+                shopMenu.addItem("" +categoryUnlockPrice[i] + "-" + categories[i], catSymbols[i]);
+                break;
+            }
+        }
+        if (!updated) {
+            shopMenu.addItem("" + prestigePrice + "- Prestige", :prestige);
+        }
+        return shopMenu;
     }
 
 }

@@ -9,17 +9,17 @@ class MainMenuDelegate extends WatchUi.MenuInputDelegate {
     }
 
     function onMenuItem(item as Symbol) as Void {
+        var app = Application.getApp();
         switch (item) {
-            case :seed:
-                WatchUi.pushView(new SeedView(), new SeedDelegate(), WatchUi.SLIDE_IMMEDIATE);
+            case :cat1:
                 break;
-            case :encyclopedia:
+            case :cat2:
                 WatchUi.pushView(new EncyclopediaView(), new WatchUi.BehaviorDelegate(), WatchUi.SLIDE_IMMEDIATE);
                 break;
-            case :shop:
+            case :cat3:
                 WatchUi.pushView(Application.getApp().getShopMenu(), new WatchUi.BehaviorDelegate(), WatchUi.SLIDE_IMMEDIATE);
                 break;
-            case :stats:
+            case :cat4:
                 WatchUi.pushView(new StatsView(), new WatchUi.BehaviorDelegate(), WatchUi.SLIDE_IMMEDIATE);
                 break;
             default:

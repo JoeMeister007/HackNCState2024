@@ -36,12 +36,12 @@ class Plictionary {
                 "images" => [Rez.Drawables.Wildflower_Phlox_1, Rez.Drawables.Wildflower_Phlox_2, Rez.Drawables.Wildflower_Phlox_3, Rez.Drawables.Wildflower_Phlox_4, Rez.Drawables.Wildflower_Phlox_5]
             }
         },
-        "flowers" => {
+        // "flowers" => {
 
-        },
-        "ferns_shrubs" => {
+        // },
+        // "ferns_shrubs" => {
 
-        },
+        // },
         "crops" => {
 
         },
