@@ -156,15 +156,6 @@ class SuperCropApp extends Application.AppBase {
             Properties.setValue("currentPlant", currentPlant);
             Properties.setValue("currentCategory", currentCategory);
             Properties.setValue("stepsOnPlant", stepsOnPlant);
-<<<<<<< Updated upstream
-=======
-            Properties.setValue("money", money);
-
-
-            Storage.setValue("plantCountDict", plantCountDict);
-            Storage.setValue("categoriesUnlocked", categoriesUnlocked);
-
->>>>>>> Stashed changes
         } else{
             setProperty("lastSteps", lastSteps);
             setProperty("currentPlant", currentPlant);
