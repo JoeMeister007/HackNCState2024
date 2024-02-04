@@ -9,19 +9,19 @@ class SeedView extends WatchUi.View {
         var jeff = Math.rand() % 5;
         switch (jeff) {
             case 0:
-                drawable = Application.loadResource(Rez.Drawables.Wildflower_Poppy_1);
+                drawable = Application.loadResource(Rez.Drawables.Wildflower_Phlox_1);
                 break;
             case 1:
-                drawable = Application.loadResource(Rez.Drawables.Wildflower_Poppy_2);
+                drawable = Application.loadResource(Rez.Drawables.Wildflower_Phlox_2);
                 break;
             case 2:
-                drawable = Application.loadResource(Rez.Drawables.Wildflower_Poppy_3);
+                drawable = Application.loadResource(Rez.Drawables.Wildflower_Phlox_3);
                 break;
             case 3:
-                drawable = Application.loadResource(Rez.Drawables.Wildflower_Poppy_4);
+                drawable = Application.loadResource(Rez.Drawables.Wildflower_Phlox_4);
                 break;
             case 4:
-                drawable = Application.loadResource(Rez.Drawables.Wildflower_Poppy_5);
+                drawable = Application.loadResource(Rez.Drawables.Wildflower_Phlox_5);
                 break;
             default:
                 break;

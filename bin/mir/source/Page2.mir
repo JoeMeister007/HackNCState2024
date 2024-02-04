@@ -1,26 +1,26 @@
-[ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\source\Page2.mc"; @line = 1; ]
+[ @file = "C:\Users\Brian\git\HackNCState2024\source\Page2.mc"; @line = 1; ]
 import Toybox.Graphics;
-[ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\source\Page2.mc"; @line = 2; ]
+[ @file = "C:\Users\Brian\git\HackNCState2024\source\Page2.mc"; @line = 2; ]
 import Toybox.WatchUi;
-[ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\source\Page2.mc"; @line = 4; ]
+[ @file = "C:\Users\Brian\git\HackNCState2024\source\Page2.mc"; @line = 4; ]
 class Page2 extends WatchUi.View{
-    [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\source\Page2.mc"; @line = 4; ]
+    [ @file = "C:\Users\Brian\git\HackNCState2024\source\Page2.mc"; @line = 4; ]
     <init> {
     }
-    [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\source\Page2.mc"; @line = 4; ]
+    [ @file = "C:\Users\Brian\git\HackNCState2024\source\Page2.mc"; @line = 4; ]
     static
     <init> {
     }
-    [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\source\Page2.mc"; @line = 5; @position = 8; ]
+    [ @file = "C:\Users\Brian\git\HackNCState2024\source\Page2.mc"; @line = 5; @position = 8; ]
     var kermitBitMap;
-    [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\source\Page2.mc"; @line = 6; ]
+    [ @file = "C:\Users\Brian\git\HackNCState2024\source\Page2.mc"; @line = 6; ]
     function initialize() as Void {
-C_Users_Joey_Documents_GitHub_HackNCState2024_source_Page2_mc_6_26_start:
-[ "C:\Users\Joey\Documents\GitHub\HackNCState2024\source\Page2.mc" 7 8 ]
+C_Users_Brian_git_HackNCState2024_source_Page2_mc_6_26_start:
+[ "C:\Users\Brian\git\HackNCState2024\source\Page2.mc" 7 8 ]
         %tmp.2 = getv ? :View;
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-[ "C:\Users\Joey\Documents\GitHub\HackNCState2024\source\Page2.mc" 8 8 ]
+[ "C:\Users\Brian\git\HackNCState2024\source\Page2.mc" 8 8 ]
         %tmp.5 = getv ? :Application;
         %tmp.6 = getv function %tmp.5 :loadResource;
         %tmp.8 = getv ? :Rez;
@@ -28,18 +28,18 @@ C_Users_Joey_Documents_GitHub_HackNCState2024_source_Page2_mc_6_26_start:
         %tmp.10 = getv %tmp.9 :KermitImage;
         %tmp.11 = invoke %tmp.5 %tmp.6(%tmp.10);
         putv self :kermitBitMap %tmp.11;
-C_Users_Joey_Documents_GitHub_HackNCState2024_source_Page2_mc_6_26_stop:
+C_Users_Brian_git_HackNCState2024_source_Page2_mc_6_26_stop:
     }
-    [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\source\Page2.mc"; @line = 12; ]
+    [ @file = "C:\Users\Brian\git\HackNCState2024\source\Page2.mc"; @line = 12; ]
     function onLayout(dc as Dc) as Void {
     }
-    [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\source\Page2.mc"; @line = 18; ]
+    [ @file = "C:\Users\Brian\git\HackNCState2024\source\Page2.mc"; @line = 18; ]
     function onShow() as Void {
     }
-    [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\source\Page2.mc"; @line = 22; ]
+    [ @file = "C:\Users\Brian\git\HackNCState2024\source\Page2.mc"; @line = 22; ]
     function onUpdate(dc as Dc) as Void {
-C_Users_Joey_Documents_GitHub_HackNCState2024_source_Page2_mc_22_40_start:
-[ "C:\Users\Joey\Documents\GitHub\HackNCState2024\source\Page2.mc" 23 8 ]
+C_Users_Brian_git_HackNCState2024_source_Page2_mc_22_40_start:
+[ "C:\Users\Brian\git\HackNCState2024\source\Page2.mc" 23 8 ]
         %tmp.1 = lgetv %dc;
         %tmp.2 = getv function %tmp.1 :setColor;
         %tmp.3 = getm $.Toybox.Graphics;
@@ -47,23 +47,23 @@ C_Users_Joey_Documents_GitHub_HackNCState2024_source_Page2_mc_22_40_start:
         %tmp.5 = getm $.Toybox.Graphics;
         %tmp.6 = getv %tmp.5 :COLOR_BLACK;
         invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
-[ "C:\Users\Joey\Documents\GitHub\HackNCState2024\source\Page2.mc" 24 8 ]
+[ "C:\Users\Brian\git\HackNCState2024\source\Page2.mc" 24 8 ]
         %tmp.7 = lgetv %dc;
         %tmp.8 = getv function %tmp.7 :clear;
         invoke %tmp.7 %tmp.8();
-[ "C:\Users\Joey\Documents\GitHub\HackNCState2024\source\Page2.mc" 25 8 ]
+[ "C:\Users\Brian\git\HackNCState2024\source\Page2.mc" 25 8 ]
         %tmp.9 = lgetv %dc;
         %tmp.10 = getv function %tmp.9 :drawBitmap;
         %tmp.11 = 0;
         %tmp.12 = 0;
         %tmp.14 = getv ? :kermitBitMap;
         invoke %tmp.9 %tmp.10(%tmp.11, %tmp.12, %tmp.14);
-C_Users_Joey_Documents_GitHub_HackNCState2024_source_Page2_mc_22_40_stop:
+C_Users_Brian_git_HackNCState2024_source_Page2_mc_22_40_stop:
     }
-    [ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\source\Page2.mc"; @line = 31; ]
+    [ @file = "C:\Users\Brian\git\HackNCState2024\source\Page2.mc"; @line = 31; ]
     function onHide() as Void {
     }
 }
-[ @file = "C:\Users\Joey\Documents\GitHub\HackNCState2024\source\Page2.mc"; @line = 1; ]
+[ @file = "C:\Users\Brian\git\HackNCState2024\source\Page2.mc"; @line = 1; ]
 <init> {
 }
