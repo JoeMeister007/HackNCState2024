@@ -28,7 +28,7 @@
     <bitmap id="Wildflower_Phlox_5" filename="wildflower_sprites/phlox/phlox_5.png"/>
 
     <bitmap id="Tree_Pine_1" filename="tree_sprites/pine_tree_sprites/pine_tree_1.png"/>
-    <bitmap id="Tree_Pine_2" filename="tree_sprites/pine_tree_sprites/pine_tree_12.png"/>
+    <bitmap id="Tree_Pine_2" filename="tree_sprites/pine_tree_sprites/pine_tree_2.png"/>
     <bitmap id="Tree_Pine_3" filename="tree_sprites/pine_tree_sprites/pine_tree_3.png"/>
     <bitmap id="Tree_Pine_4" filename="tree_sprites/pine_tree_sprites/pine_tree_4.png"/>
     <bitmap id="Tree_Pine_5" filename="tree_sprites/pine_tree_sprites/pine_tree_5.png"/>
