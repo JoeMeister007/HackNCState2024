@@ -6,6 +6,7 @@ class PlantInfoView extends WatchUi.View {
     var drawable;
     var category;
     var plantName;
+    
 
     function initialize(cat, name) {
         WatchUi.View.initialize();
@@ -20,12 +21,12 @@ class PlantInfoView extends WatchUi.View {
         dc.clear();
 
         //draw plant
-        dc.drawBitmap(dc.getWidth() / 2 - drawable.getWidth() / 2,dc.getHeight() / 2 - drawable.getHeight() / 2,drawable);
+        dc.drawBitmap(dc.getWidth() / 2 - drawable.getWidth() / 2,dc.getHeight() / 2 - drawable.getHeight() /2 - dc.getHeight() / 10, drawable);
         //draw text
         dc.drawText(dc.getWidth() / 2, 10, Graphics.FONT_MEDIUM, 
         Plictionary.plictionary[category][plantName]["displayName"],Graphics.TEXT_JUSTIFY_CENTER);
         dc.drawText(dc.getWidth() / 2, 
-        dc.getHeight() - 10 - dc.getFontHeight(Graphics.FONT_MEDIUM), 
+        dc.getHeight() - 2*(10 + dc.getFontHeight(Graphics.FONT_MEDIUM)), 
         Graphics.FONT_MEDIUM,
         Plictionary.plictionary[category][plantName]["funFact"],
         Graphics.TEXT_JUSTIFY_CENTER);

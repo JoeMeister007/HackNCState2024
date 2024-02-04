@@ -5,6 +5,8 @@ class PlantListingView extends WatchUi.View {
 
     var plvMenu;
     var cat;
+    var firstTime = true;
+
 
     function initialize(title, category) {
         WatchUi.View.initialize();
@@ -21,7 +23,13 @@ class PlantListingView extends WatchUi.View {
         }
     }
 
-    function onUpdate(dc) {
-        WatchUi.pushView(plvMenu, new PlantListingDelegate(cat), WatchUi.SLIDE_IMMEDIATE);
+    function onShow() {
+        if (firstTime) {
+            WatchUi.pushView(plvMenu, new PlantListingDelegate(cat), WatchUi.SLIDE_IMMEDIATE);
+            firstTime = false;
+        }
+        else {
+            WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
+        }
     }
 }

@@ -2,7 +2,7 @@ import Toybox.WatchUi;
 import Toybox.Graphics;
 
 class EncyclopediaView extends WatchUi.View {
-
+    var firstTime = true;
     var encMenu;
     function initialize() {
         WatchUi.View.initialize();
@@ -15,7 +15,13 @@ class EncyclopediaView extends WatchUi.View {
         encMenu.addItem("Trees", :trees);
     }
 
-    function onUpdate(dc) {
-        WatchUi.pushView(encMenu, new EncyclopediaDelegate(), WatchUi.SLIDE_IMMEDIATE);
+    function onShow() {
+        if (firstTime) {
+            WatchUi.pushView(encMenu, new EncyclopediaDelegate(), WatchUi.SLIDE_IMMEDIATE);
+            firstTime = false;
+        }
+        else {
+            WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
+        }
     }
 }
