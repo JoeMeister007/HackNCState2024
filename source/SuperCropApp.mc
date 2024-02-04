@@ -9,11 +9,7 @@ class SuperCropApp extends Application.AppBase {
     var currentPlant;
     var currentCategory;
     var stepsOnPlant;
-
-    var marigoldCount;
-    var phloxCount;
-    var susanCount;
-    var weedCount;
+    var plantCountDict;
 
     //currentPlantModel
     var currentPlantModel;
@@ -64,10 +60,7 @@ class SuperCropApp extends Application.AppBase {
                 currentCategory = Properties.getValue("currentCategory");
                 stepsOnPlant = Properties.getValue("stepsOnPlant");
 
-                marigoldCount = Properties.getValue("marigoldCount");
-                phloxCount = Properties.getValue("phloxCount");
-                susanCount = Properties.getValue("susanCount");
-                weedCount = Properties.getValue("weedCount");
+                plantCountDict = Storage.getValue("plantCountDict");
             }
             else {
                 lastSteps = getCurrentSteps();
@@ -76,10 +69,7 @@ class SuperCropApp extends Application.AppBase {
                 stepsOnPlant = 0;
                 Properties.setValue("firstTime", false);
 
-                marigoldCount = 0;
-                phloxCount = 0;
-                susanCount = 0;
-                weedCount = 0;
+                plantCountDict = {};
             }
 
         } else{
@@ -90,10 +80,7 @@ class SuperCropApp extends Application.AppBase {
                 currentCategory = getProperty("currentCategory");
                 stepsOnPlant = getProperty("stepsOnPlant");
 
-                marigoldCount = getProperty("marigoldCount");
-                phloxCount = getProperty("phloxCount");
-                susanCount = getProperty("susanCount");
-                weedCount = getProperty("weedCount");
+                plantCountDict = getProperty("plantCountDict");
             }
             else {
                 lastSteps = ActivityMonitor.getInfo().steps;
@@ -102,20 +89,12 @@ class SuperCropApp extends Application.AppBase {
                 stepsOnPlant = 0;
                 setProperty("firstTime", false);
 
-                marigoldCount = 0;
-                phloxCount = 0;
-                susanCount = 0;
-                weedCount = 0;
+                plantCountDict = {};
             }
 
         }
 
         // With the variables loaded, set the totals grown
-
-        Plictionary.plictionary["wildflowers"]["marigold"]["totalGrown"] = marigoldCount;
-        Plictionary.plictionary["wildflowers"]["phlox"]["totalGrown"] = phloxCount;
-        Plictionary.plictionary["wildflowers"]["black_eyed_susan"]["totalGrown"] = susanCount;
-        Plictionary.plictionary["wildflowers"]["butterflyweed"]["totalGrown"] = weedCount;
 
         currentPlantModel = new SeedModel(currentPlant, Plictionary.plictionary[currentCategory][currentPlant]["stepsToCompletion"], stepsOnPlant);
 
@@ -123,14 +102,6 @@ class SuperCropApp extends Application.AppBase {
 
     // onStop() is called when your application is exiting
     function onStop(state as Dictionary?) as Void {
-
-        // Update properties for storage
-
-        marigoldCount = Plictionary.plictionary["wildflowers"]["marigold"]["totalGrown"];
-        phloxCount = Plictionary.plictionary["wildflowers"]["phlox"]["totalGrown"];
-        susanCount = Plictionary.plictionary["wildflowers"]["black_eyed_susan"]["totalGrown"];
-        weedCount = Plictionary.plictionary["wildflowers"]["butterflyweed"]["totalGrown"];
-
         //load in our properties
         if (Toybox.Application has :Properties){
             Properties.setValue("lastSteps", lastSteps);
@@ -138,20 +109,15 @@ class SuperCropApp extends Application.AppBase {
             Properties.setValue("currentCategory", currentCategory);
             Properties.setValue("stepsOnPlant", stepsOnPlant);
 
-            Properties.setValue("marigoldCount", marigoldCount);
-            Properties.setValue("phloxCount", phloxCount);
-            Properties.setValue("susanCount", susanCount);
-            Properties.setValue("weedCount", weedCount);
+            Storage.setValue("plantCountDict", plantCountDict);
+
         } else{
             setProperty("lastSteps", lastSteps);
             setProperty("currentPlant", currentPlant);
             setProperty("currentCategory", currentCategory);
             setProperty("stepsOnPlant", stepsOnPlant);
 
-            setProperty("marigoldCount", marigoldCount);
-            setProperty("phloxCount", phloxCount);
-            setProperty("susanCount", susanCount);
-            setProperty("weedCount", weedCount);
+            setProperty("plantCountDict", plantCountDict);
         }
     }
 

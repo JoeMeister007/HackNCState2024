@@ -18,7 +18,14 @@ class SeedDelegate extends WatchUi.BehaviorDelegate {
         //eventually do some encyclopedia stuff
 
         // Increment the corresponding plant stat with a cursed switch statement
-        Plictionary.plictionary[app.currentCategory][app.currentPlant]["totalGrown"] += 1;
+        if (!app.plantCountDict.hasKey(app.currentCategory)) {
+            app.plantCountDict.put(app.currentCategory, {});
+        }
+        if (!app.plantCountDict[app.currentCategory].hasKey(app.currentPlant)) {
+            app.plantCountDict[app.currentCategory].put(app.currentPlant, 0);
+        }
+        app.plantCountDict[app.currentCategory][app.currentPlant] += 1;
+        System.println(app.plantCountDict[app.currentCategory]);
         
         //generate new plant
         var prob = 1.0 * Math.rand() / MAX_NUMBER_SIZE;

@@ -4,9 +4,4 @@
     <property id="currentPlant" type="string">marigold</property>
     <property id="currentCategory" type="string">wildflowers</property>
     <property id="stepsOnPlant" type = "number">0</property>
-
-    <property id="marigoldCount" type="number">0</property>
-    <property id="phloxCount" type="number">0</property>
-    <property id="susanCount" type="number">0</property>
-    <property id="weedCount" type="number">0</property>
 </properties>
