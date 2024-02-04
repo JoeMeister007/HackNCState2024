@@ -1,9 +1,2 @@
 
-bin/gen/resources/cache/id1a4b1a7.mbc
-bin/HackNCState2024.prg
-bin/HackNCState2024.prg.debug.xml
-bin/internal-mir/Rez.mir
-bin/mir/source/HackNCState2024App.mir
-bin/mir/source/HackNCState2024Delegate.mir
-bin/mir/source/HackNCState2024MenuDelegate.mir
-bin/mir/source/HackNCState2024View.mir
+bin/*

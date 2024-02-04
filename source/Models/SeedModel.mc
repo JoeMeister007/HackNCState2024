@@ -10,14 +10,12 @@ class SeedModel {
     public var progress;                // An integer representing the progress the plant has made through its life cycle.
     public var completionThreshold;     // An integer representing the total amount of time until the plant is fully grown.
     public var stage;                   // An integer between 1 and 5 representing the plant's stage of life.
-    public var currentFilename;         // A string generated from self.seedType and self.stage that corresponds to the filename of the plant at the given stage.
 
     public function initialize(species, threshold) {
         self.seedType = species;
         self.completionThreshold = threshold;
         self.progress = 0;
         self.stage = 1;
-        self.currentFilename = self.seedType + "_" + self.stage + ".png";
     }
 
     public function onProgressUpdate(addedProgress) {
@@ -31,9 +29,7 @@ class SeedModel {
         }
 
         // Update the current stage based off of current progress.
-        self.stage = 5 * Math.floor(self.progress / self.completionThreshold);
-
-        self.currentFilename = self.seedType + "_" + self.stage + ".png";
+        self.stage = 1 + Math.floor( 4 * self.progress / self.completionThreshold);
     }
 
 }
