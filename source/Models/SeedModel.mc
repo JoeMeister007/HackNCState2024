@@ -16,10 +16,10 @@ class SeedModel {
         self.completionThreshold = threshold;
         self.progress = progress;
         self.stage = 1;
+        doUpdate(0);
     }
 
-    public function onProgressUpdate(addedProgress) {
-        
+    public function doUpdate(addedProgress) {
         // Update progress counter
         self.progress += addedProgress;
 
@@ -34,6 +34,10 @@ class SeedModel {
         if (self.stage > 5) {
             self.stage = 5;
         }
+    }
+
+    public function onProgressUpdate(addedProgress) {
+        doUpdate(addedProgress);
     }
 
 }
