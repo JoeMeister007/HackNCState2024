@@ -12,7 +12,8 @@ class PlantInfoView extends WatchUi.View {
         WatchUi.View.initialize();
         category = cat;
         plantName = name;
-        drawable = Application.loadResource(Plictionary.plictionary[category][plantName]["images"][4]);
+        var plantImages = Plictionary.plictionary[category][plantName]["images"];
+        drawable = Application.loadResource(plantImages[plantImages.size() - 1]);
     }
 
     function onUpdate(dc) {

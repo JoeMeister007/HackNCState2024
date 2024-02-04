@@ -23,11 +23,12 @@ class PlantListingView extends WatchUi.View {
 
 
             if (app.plantCountDict != null and
-                app.plantCountDict[category] != null and
-                app.plantCountDict[category][plantNames[i]] != null and 
-                app.plantCountDict[category][plantNames[i]] > 0) 
+                app.plantCountDict.hasKey(category) and
+                app.plantCountDict[category].hasKey(plantNames[i])) 
             {
-                plvMenu.addItem(plantsOfCat[plantNames[i]]["displayName"], plantNames[i]);
+                if (app.plantCountDict[category][plantNames[i]] > 0) {
+                    plvMenu.addItem(plantsOfCat[plantNames[i]]["displayName"], plantNames[i]);
+                }
             }
         }
     }

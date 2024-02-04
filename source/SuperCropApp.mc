@@ -10,6 +10,7 @@ class SuperCropApp extends Application.AppBase {
     var currentCategory;
     var stepsOnPlant;
     var plantCountDict;
+    var money;
 
     //currentPlantModel
     var currentPlantModel;
@@ -57,6 +58,7 @@ class SuperCropApp extends Application.AppBase {
                 currentPlant = Properties.getValue("currentPlant");
                 currentCategory = Properties.getValue("currentCategory");
                 stepsOnPlant = Properties.getValue("stepsOnPlant");
+                money = Properties.getValue("money");
 
                 plantCountDict = Storage.getValue("plantCountDict");
             }
@@ -65,6 +67,7 @@ class SuperCropApp extends Application.AppBase {
                 currentPlant = "marigold";
                 currentCategory = "wildflowers";
                 stepsOnPlant = 0;
+                money = 0;
                 Properties.setValue("firstTime", false);
 
                 plantCountDict = {};
@@ -77,6 +80,7 @@ class SuperCropApp extends Application.AppBase {
                 currentPlant = getProperty("currentPlant");
                 currentCategory = getProperty("currentCategory");
                 stepsOnPlant = getProperty("stepsOnPlant");
+                money = getProperty("money");
 
                 plantCountDict = getProperty("plantCountDict");
             }
@@ -85,6 +89,7 @@ class SuperCropApp extends Application.AppBase {
                 currentPlant = "marigold";
                 currentCategory = "wildflowers";
                 stepsOnPlant = 0;
+                money = 0;
                 setProperty("firstTime", false);
 
                 plantCountDict = {};
@@ -96,6 +101,39 @@ class SuperCropApp extends Application.AppBase {
 
         currentPlantModel = new SeedModel(currentPlant, Plictionary.plictionary[currentCategory][currentPlant]["stepsToCompletion"], stepsOnPlant);
 
+    }
+
+    function updateSeedAndMoney() {
+        var currSteps = getCurrentSteps();
+        var stepDiff = getStepDifference();
+
+        if (stepDiff > 0) {
+            //update steps
+            lastSteps = currSteps;
+            stepsOnPlant += stepDiff;
+            currentPlantModel.onProgressUpdate(stepDiff);
+
+            //update money
+            //note: we won't care about plants that have technically grown, but haven't
+            //been clicked on yet. The seed delegate can retroactively add the money for those
+            for (var i = 0;i < plantCountDict.size(); i++) {
+                //for each category
+                var cat = plantCountDict.keys()[i];
+                var categoryTalleys = plantCountDict[cat];
+                for (var j = 0; j < categoryTalleys.size(); j++) {
+                    var plnt = categoryTalleys.keys()[j];
+                    //for each plant
+                    money += categoryTalleys[plnt] * stepDiff * Plictionary.plictionary[cat][plnt]["moneyPerStep"];
+                    //money is num plants * money per step for plant * steps
+                }
+            }
+        }
+        else if (stepDiff < 0) {
+            //find something better than this, but hacky solution
+            //for hacky competition for now
+            lastSteps = 0;
+            updateSeedAndMoney();      
+        }
     }
 
     // onStop() is called when your application is exiting
