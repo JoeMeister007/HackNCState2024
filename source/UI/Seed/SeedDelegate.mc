@@ -25,7 +25,6 @@ class SeedDelegate extends WatchUi.BehaviorDelegate {
             app.plantCountDict[app.currentCategory].put(app.currentPlant, 0);
         }
         app.plantCountDict[app.currentCategory][app.currentPlant] += 1;
-        System.println(app.plantCountDict[app.currentCategory]);
         
         //generate new plant
         var prob = 1.0 * Math.rand() / MAX_NUMBER_SIZE;

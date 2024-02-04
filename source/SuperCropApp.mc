@@ -39,8 +39,6 @@ class SuperCropApp extends Application.AppBase {
         if (currSteps < lastSteps) {
             //figure out some shenanigans here
             var yesterday = ActivityMonitor.getHistory();
-            System.println(yesterday);
-            System.println(yesterday[1]);
             diff = -1;
         }
         else {
