@@ -1,14 +1,31 @@
 import Toybox.WatchUi;
 import Toybox.Graphics;
 import Toybox.Math;
+import Toybox.Timer;
 
 class SeedView extends WatchUi.View {
     var drawable;
     var lastPlantStage = 1;
     var lastPlantName = "jeff";
+    var updateTimer;
     function initialize() {
         WatchUi.View.initialize();
+        updateTimer = new Timer.Timer();
     }
+
+    function callOnUpdate() {
+        WatchUi.requestUpdate();
+    }
+
+    function onShow() {
+        updateTimer.start(method(:callOnUpdate), 1000, true);
+    }
+
+    function onHide() {
+        updateTimer.stop();
+    }
+
+
 
     function onUpdate(dc) {
         //clear the screen
@@ -43,6 +60,5 @@ class SeedView extends WatchUi.View {
         //draw text
         dc.drawText(dc.getWidth() / 2, 10, Graphics.FONT_MEDIUM, "Growing",Graphics.TEXT_JUSTIFY_CENTER);
         dc.drawText(dc.getWidth() / 2, dc.getHeight() - 10 - dc.getFontHeight(Graphics.FONT_MEDIUM), Graphics.FONT_MEDIUM, completionString,Graphics.TEXT_JUSTIFY_CENTER);
-        WatchUi.requestUpdate();
     }
 }

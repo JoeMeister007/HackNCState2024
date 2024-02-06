@@ -11,6 +11,7 @@ class SuperCropApp extends Application.AppBase {
     var stepsOnPlant;
     var plantCountDict;
     var money;
+    var firstTime;//just a bool for some initiailization stuff
 
     //currentPlantModel
     var currentPlantModel;
@@ -60,7 +61,7 @@ class SuperCropApp extends Application.AppBase {
     function onStart(state as Dictionary?) as Void {
         //load in our properties
         if (Toybox.Application has :Properties){
-            var firstTime = Properties.getValue("firstTime");
+            firstTime = Properties.getValue("firstTime");
             if (!firstTime) {
                 lastSteps = Properties.getValue("lastSteps");
                 currentPlant = Properties.getValue("currentPlant");
@@ -77,7 +78,6 @@ class SuperCropApp extends Application.AppBase {
                 currentCategory = "wildflowers";
                 stepsOnPlant = 0;
                 money = 0;
-                Properties.setValue("firstTime", false);
 
                 plantCountDict = {};
                 categoriesUnlocked = [true, false, false];
@@ -101,7 +101,6 @@ class SuperCropApp extends Application.AppBase {
                 currentCategory = "wildflowers";
                 stepsOnPlant = 0;
                 money = 0;
-                setProperty("firstTime", false);
 
                 plantCountDict = {};
                 categoriesUnlocked = [true, false, false];
@@ -156,6 +155,16 @@ class SuperCropApp extends Application.AppBase {
             Properties.setValue("currentPlant", currentPlant);
             Properties.setValue("currentCategory", currentCategory);
             Properties.setValue("stepsOnPlant", stepsOnPlant);
+            Properties.setValue("money", money);
+
+            Storage.setValue("plantCountDict", plantCountDict);
+            Storage.setValue("categoriesUnlocked", categoriesUnlocked);
+
+            //set firstTime to false (if applicable) after making sure
+            //everything needed is saved
+            if (firstTime) {
+                Properties.setValue("firstTime", false);
+            }
         } else{
             setProperty("lastSteps", lastSteps);
             setProperty("currentPlant", currentPlant);
@@ -165,6 +174,11 @@ class SuperCropApp extends Application.AppBase {
             setProperty("plantCountDict", plantCountDict);
             setProperty("money", money);
             setProperty("categoriesUnlocked", categoriesUnlocked);
+
+            
+            if (firstTime) {
+                setProperty("firstTime", false);
+            }
         }
     }
 

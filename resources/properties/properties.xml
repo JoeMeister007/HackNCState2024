@@ -1,5 +1,5 @@
 <properties>
-    <property id="firstTime" type="boolean">True</property>
+    <property id="firstTime" type="boolean">true</property>
     <property id="lastSteps" type="number">0</property>
     <property id="currentPlant" type="string">marigold</property>
     <property id="currentCategory" type="string">wildflowers</property>
